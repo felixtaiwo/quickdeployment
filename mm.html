@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Royal Banquet of Eunice & Oluwatosin</title>
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Use Inter font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+    /* Custom Colors: Lavender and Olive Green */
+    :root {
+      --color-primary: #8e8a9f; /* Soft Lavender */
+      --color-secondary: #556b2f; /* Olive Green */
+      --color-gold: #d97706; /* Gold/Accent */
+    }
+
+    /* Custom styles to enhance the romantic, elegant feel */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fcfaf8; /* Soft cream background */
+      color: #333;
+    }
+    .hero-background {
+      /* Using a soft placeholder image for a romantic feel */
+      background-image: url('https://placehold.co/1200x800/d8dae7/333333?text=Eunice+%26+Oluwatosin');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Parallax effect */
+      min-height: 80vh;
+    }
+    .text-accent {
+      color: var(--color-secondary); /* Olive Green Text */
+    }
+    .bg-accent {
+      background-color: var(--color-secondary);
+    }
+    .btn-primary {
+      background-color: var(--color-gold); /* Gold Accent Button */
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #b45309;
+      transform: scale(1.05);
+    }
+    .shadow-elegant {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    .border-primary {
+      border-color: var(--color-primary); /* Lavender border */
+    }
+    .bg-primary-light {
+      background-color: #f7f7fa; /* Very light lavender tint */
+    }
+    .text-primary-dark {
+      color: var(--color-primary);
+    }
+  </style>
+</head>
+<body class="antialiased scroll-smooth">
+
+<!-- Header & Navigation -->
+<header class="sticky top-0 z-20 bg-white/95 backdrop-blur-sm shadow-sm">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+    <!-- Logo/Names -->
+    <a href="#" class="text-xl font-bold text-accent tracking-wider">
+      E & O
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <div class="hidden md:flex space-x-6 text-sm font-medium">
+      <a href="#details" class="text-gray-600 hover:text-accent transition duration-150">The Day</a>
+      <a href="#story" class="text-gray-600 hover:text-accent transition duration-150">Our Story</a>
+      <a href="#party" class="text-gray-600 hover:text-accent transition duration-150">The Party</a>
+      <a href="#photos" class="text-gray-600 hover:text-accent transition duration-150">Photos</a>
+      <a href="#texts" class="text-gray-600 hover:text-accent transition duration-150">Scripture</a>
+      <a href="#rsvp" class="text-gray-600 hover:text-accent transition duration-150">RSVP</a>
+      <a href="#support" class="text-gray-600 hover:text-accent transition duration-150">Support</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-button" class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-150">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </nav>
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 bg-white border-t">
+    <a href="#details" class="block text-gray-600 hover:text-accent transition duration-150">The Day</a>
+    <a href="#story" class="block text-gray-600 hover:text-accent transition duration-150">Our Story</a>
+    <a href="#party" class="block text-gray-600 hover:text-accent transition duration-150">The Party</a>
+    <a href="#photos" class="block text-gray-600 hover:text-accent transition duration-150">Photos</a>
+    <a href="#texts" class="block text-gray-600 hover:text-accent transition duration-150">Scripture</a>
+    <a href="#rsvp" class="block text-gray-600 hover:text-accent transition duration-150">RSVP</a>
+    <a href="#support" class="block text-gray-600 hover:text-accent transition duration-150">Support</a>
+  </div>
+</header>
+
+<main>
+  <!-- 1. Hero Section (Front Page: Names, Date, Location) -->
+  <section class="hero-background flex items-center justify-center p-4">
+    <div class="bg-white/70 backdrop-blur-sm p-8 sm:p-12 rounded-xl text-center shadow-2xl border-4 border-primary/50 max-w-lg w-full">
+      <h1 class="text-5xl sm:text-7xl font-light tracking-widest text-accent">
+        Eunice & Oluwatosin
+      </h1>
+      <p class="text-lg sm:text-xl text-gray-700 mt-4 tracking-wider">
+        cordially invite you to celebrate their wedding
+      </p>
+      <div class="my-6">
+        <p class="text-3xl sm:text-4xl font-semibold text-gray-800">
+          December 6th, 2025
+        </p>
+        <p class="text-md sm:text-lg text-gray-600 mt-2">
+          Ogbomosho Town, Oyo State
+        </p>
+      </div>
+      <a href="#rsvp" class="inline-block px-8 py-3 mt-4 text-base font-medium rounded-xl text-white btn-primary shadow-lg">
+        RSVP Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Wedding Details (Schedule) Section -->
+  <section id="details" class="py-16 sm:py-24 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-extrabold text-accent mb-12">The Wedding Day Schedule</h2>
+      <p class="text-lg text-gray-600 mb-10">
+        The colors of the day are <span class="font-semibold text-primary-dark">Lavender</span> and <span class="font-semibold text-accent">Olive Green</span>.
+      </p>
+
+      <div class="space-y-8">
+        <!-- Event 1: Ceremony -->
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-elegant flex flex-col sm:flex-row items-center sm:items-start text-left hover:shadow-xl transition duration-300 border-l-4 border-primary">
+          <div class="sm:w-1/4 w-full text-center sm:text-right sm:pr-8 mb-4 sm:mb-0 border-b sm:border-b-0 sm:border-r border-gray-200">
+            <p class="text-4xl font-semibold text-gray-800">10:00</p>
+            <p class="text-sm text-gray-500 uppercase tracking-widest">AM</p>
+          </div>
+          <div class="sm:w-3/4 w-full sm:pl-8">
+            <h3 class="text-2xl font-bold text-accent">Solemnization & Wedding Ceremony</h3>
+            <p class="mt-2 text-gray-600">
+              Please join us as Eunice and Oluwatosin exchange vows. The venue will be stated in your invitation card.
+            </p>
+            <p class="text-sm text-gray-500 mt-1">Attire: Lavender & Olive Green | Location: As stated in the invite</p>
+          </div>
+        </div>
+
+        <!-- Event 2: Reception -->
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-elegant flex flex-col sm:flex-row items-center sm:items-start text-left hover:shadow-xl transition duration-300 border-l-4 border-primary">
+          <div class="sm:w-1/4 w-full text-center sm:text-right sm:pr-8 mb-4 sm:mb-0 border-b sm:border-b-0 sm:border-r border-gray-200">
+            <p class="text-4xl font-semibold text-gray-800">1:00</p>
+            <p class="text-sm text-gray-500 uppercase tracking-widest">PM</p>
+          </div>
+          <div class="sm:w-3/4 w-full sm:pl-8">
+            <h3 class="text-2xl font-bold text-accent">Reception & Celebration</h3>
+            <p class="mt-2 text-gray-600">
+              The reception dinner and celebration will take place immediately after the ceremony. Lunch, drinks, and dancing to follow!
+            </p>
+            <p class="text-sm text-gray-500 mt-1">Location: As stated in the invite</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Our Story Section (How They Met - Eunice First, then Oluwatosin) -->
+  <section id="story" class="py-16 sm:py-24 bg-primary-light">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-extrabold text-accent text-center mb-16">How Our Paths Crossed</h2>
+
+      <!-- Eunice's Write-up (Now fully updated) -->
+      <div class="md:flex md:space-x-12 mb-16">
+        <div class="md:w-1/3 flex justify-center mb-6 md:mb-0">
+          <img src="https://placehold.co/200x200/556b2f/ffffff?text=Eunice" alt="Eunice Photo" class="rounded-full object-cover w-48 h-48 border-4 border-primary shadow-lg">
+        </div>
+        <div class="md:w-2/3">
+          <h3 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-2 border-accent/20">Eunice's Perspective</h3>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            I saw him in first UCH Christian Fellowship, he was fervent, loves God and committed to nurturing God's people. We were in the same unit then, Drama Unit and I also got to know he's a senior colleague and that was all to it, a brethren 🥹. A year later God decided it's time for a love story written about us to come into physical manifestation, he proposed and I said no, a serious one😅 but he recieved it in good fate and returned to God who had convinced him, but mercy said no🙂‍↔️, I knew this not because he told me he's been actively praying despite the no but for the drastic transformation and convictions God gave me even when he's stopped chasing actively. After all said and done, I said **YES** and it's been a very ecstatic experience all the way, beyond spiritual conviction, He has proven to be a man for me in words and every action and I'm grateful to God for this.
+          </p>
+        </div>
+      </div>
+
+      <!-- Oluwatosin's Write-up -->
+      <div class="md:flex md:space-x-12 flex-row-reverse">
+        <div class="md:w-1/3 flex justify-center mb-6 md:mb-0">
+          <img src="https://placehold.co/200x200/8e8a9f/ffffff?text=Oluwatosin" alt="Oluwatosin Photo" class="rounded-full object-cover w-48 h-48 border-4 border-primary shadow-lg">
+        </div>
+        <div class="md:w-2/3 text-right md:text-left">
+          <h3 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-2 border-accent/20">Oluwatosin's Perspective</h3>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            The story of how I met Eunice is one that could only have been by supernatural orchestration. It was on a _Twosday, you know- a day meant for two people in love 🤣_. The drama unit of my school fellowship (Calvary Love Theatre) was to have a drama rehearsal that evening. I met Eunice already on the field- or was she the one who met me there? Can't remember the details now. But what stood out that day was that Eunice and I were the only people who came for that meeting. What was then supposed to be a drama rehearsal turned out to be the beginning of a talking stage🤣. I've been seeing her in the fellowship, UCHCF, before then, but that was the first time I would see her upclose. We spoke about Ogbomosho where her parents lived, I was really captured by her deep Yoruba accent sprinkled with Ogbomosho dialect- Kai! If you know, you know.
+            <br><br>
+            We also spoke about school activities, upcoming tests and the needed preparations. I initially had no intention, I was only trying to be a good senior colleague, telling her about past questions, ways to answer them, etc.
+            But after we departed that day, I thought within my mind, this lady is not bad oo🥹. She might be the perfect person for me. But then, my head countered and I was like, oh boy! she is not your type jor.
+            <br><br>
+            Days ran into weeks and then months. I couldn't get Eunice out of my thought. She had one profile picture on her WhatsApp then, anytime I saw it, it gave me hormonal surge. Adrenaline up, dopamine up, Testosterone up... I will stare at that picture for hours, analysing her smile, her lips, her teeth, everything just looked perfecto.
+            <br><br>
+            She then celebrated her birthday and I posted that picture on my status to celebrate her. As if confirming my thoughts, a friend of mine entered my dm and said 'this lady has such a beautiful smile, is she our sister?'
+            'May be' I smiled in agreement.
+            After that time, Eunice became more than just any sister but my sister. I was always watching out for her in church services. I would go ask her friend when I didn't see her, after all, I was in counselling and follow up unit, I was just doing my job🤣🤣.
+            <br><br>
+            Many things happened afterwards. Like praying to God and getting my convictions to propose to her just for this sister to come back in a month's time to say "the Holy spirit is not leading her in my direction".
+            Everything first blur🥹🥹. Which Holy Spirit? I sha went to my room to cry🤣, told some few people who encouraged me and I raised a prayer altar on her behalf. I would go around UCH every night and declare "Eunice, the lord will open your eyes, the lord will touch your heart, Eu is mine🥹"
+            <br><br>
+            Men and brethren, God taught me something through that experience. GOD DOES NOT LIE. His words are anchors, you can hold on to them even when circumstances says otherwise. His words are sure, you can bank on them.
+            Today, I am the happiest man in the world because I got a treasure from God whose price is FAR ABOVE RUBIES, something more than gold.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Wedding Party Section (UPDATED) -->
+  <section id="party" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-extrabold text-accent mb-12">The Wedding Train</h2>
+      <p class="text-lg text-gray-600 mb-10 max-w-3xl mx-auto">
+        We are incredibly thankful for the love and support from our family and friends who will stand with us on our special day.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left max-w-5xl mx-auto">
+        <!-- Bridal Train -->
+        <div class="bg-primary-light p-6 rounded-2xl shadow-elegant border-t-4 border-primary md:col-span-1">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2 border-primary/50">Bridal Train</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="font-semibold text-accent">Best Man: Dr. Israel Ojo</li>
+            <li class="font-semibold text-accent">Chief Brides Maid: Dr. Fiyinfoluwa Ogundoyin</li>
+            <li class="font-semibold text-accent">Little: Mercy Odunola</li>
+          </ul>
+        </div>
+
+        <!-- Asoebi Ladies -->
+        <div class="bg-primary-light p-6 rounded-2xl shadow-elegant border-t-4 border-primary md:col-span-1">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2 border-primary/50">Asoebi Ladies</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li>PT. Deborah Adegbaju</li>
+            <li>Ns. Deborah Oyerinde</li>
+            <li>Dr. Fiyinfoluwa Ogundoyin</li>
+            <li>Lois Ogunjimi</li>
+            <li>Dr. Mary Babatunde</li>
+            <li>Dr. Mayowa Oluwi</li>
+          </ul>
+        </div>
+
+        <!-- Men in Agbada -->
+        <div class="bg-primary-light p-6 rounded-2xl shadow-elegant border-t-4 border-primary md:col-span-1">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2 border-primary/50">Men in Agbada</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li>Dr. Ayomide Adeyilola</li>
+            <li>Dr. Caleb Jonah</li>
+            <li>Dr. David Adetula</li>
+            <li>Dr. Ifeoluwa Okunola</li>
+            <li>Dr. Israel Ojo</li>
+            <li>Dr. Opeyemi Alabi</li>
+            <li>Dr. Promise Ajala</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 4. Photos Link Section (Replaced Gallery) -->
+  <section id="photos" class="py-16 sm:py-24 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-extrabold text-accent mb-8">View & Share Our Photos</h2>
+      <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+        We've put together a gallery of our memories for you to enjoy. We also encourage you to upload any pictures you take during the wedding to our shared album!
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
+        <!-- The buttons use the correct link and open in a new tab -->
+        <a href="https://drive.google.com/drive/folders/1h0uFD5wqeyLzf8wryQ8JQKK8dOfC6xjt" target="_blank" class="px-8 py-3 text-base font-medium rounded-xl text-white btn-primary shadow-lg hover:shadow-xl w-full sm:w-auto">
+          View Official Gallery
+        </a>
+        <a href="https://drive.google.com/drive/folders/1h0uFD5wqeyLzf8wryQ8JQKK8dOfC6xjt" target="_blank" class="px-8 py-3 text-base font-medium rounded-xl text-white bg-accent hover:bg-green-800 transition duration-200 shadow-lg hover:shadow-xl w-full sm:w-auto">
+          Upload Your Photos
+        </a>
+      </div>
+
+      <!-- Direct clickable link (Most reliable fallback) -->
+      <p class="mt-8 text-md text-gray-600 max-w-2xl mx-auto">
+        Access the photo album directly here:
+        <a href="https://drive.google.com/drive/folders/1h0uFD5wqeyLzf8wryQ8JQKK8dOfC6xjt" target="_blank" class="font-semibold text-accent hover:underline break-words">
+          https://drive.google.com/drive/folders/1h0uFD5wqeyLzf8wryQ8JQKK8dOfC6xjt
+        </a>
+      </p>
+
+      <p class="text-sm text-gray-500 mt-6">
+        Don't forget to use the official hashtag: <span class="font-bold text-accent">#TheKingsBanquet25</span>
+      </p>
+      <p class="text-xs text-red-500 mt-2">
+        *Note: If the buttons fail to redirect, please copy the link above or view the site in a deployed environment, as the issue is likely due to security restrictions in the live preview window.*
+      </p>
+    </div>
+  </section>
+
+  <!-- 5. Bible Texts Section (UPDATED) -->
+  <section id="texts" class="py-16 sm:py-24 bg-primary-light">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-extrabold text-accent mb-12">Scripture for Our Journey</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Text 1: Numbers 23:19 -->
+        <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent">
+          <p class="text-xl italic text-gray-700 mb-4">
+            "God is not a man, that he should lie; neither the son of man, that he should repent: hath he said, and shall he not do it? or hath he spoken, and shall he not make it good?"
+          </p>
+          <p class="font-semibold text-accent"> - Numbers 23:19</p>
+        </div>
+
+        <!-- Text 2: Ezekiel 37:7 -->
+        <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent">
+          <p class="text-xl italic text-gray-700 mb-4">
+            "So I prophesied as I was commanded: and as I prophesied, there was a noise, and behold a shaking, and the bones came together, bone to his bone."
+          </p>
+          <p class="font-semibold text-accent"> - Ezekiel 37:7</p>
+        </div>
+
+        <!-- Text 3: Ecclesiastes 4:9 (New) -->
+        <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent">
+          <p class="text-xl italic text-gray-700 mb-4">
+            "Two are better than one; because they have a good reward for their labour."
+          </p>
+          <p class="font-semibold text-accent"> - Ecclesiastes 4:9</p>
+        </div>
+
+        <!-- Text 4: Ecclesiastes 3:14 (New) -->
+        <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent">
+          <p class="text-xl italic text-gray-700 mb-4">
+            "I know that whatever God does, it endures forever; nothing can be added to it nor anything taken from it. And God does it so that men will [reverently] fear Him [revere and worship Him, knowing that He is]."
+          </p>
+          <p class="font-semibold text-accent"> - Ecclesiastes 3:14</p>
+        </div>
+
+        <!-- Text 5: 1 Peter 4:8 (Spanning) -->
+        <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent md:col-span-2 max-w-lg mx-auto">
+          <p class="text-xl italic text-gray-700 mb-4">
+            "Above all, love each other deeply, because love covers over a multitude of sins."
+          </p>
+          <p class="font-semibold text-accent"> - 1 Peter 4:8</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Travel & Stay Section (UPDATED) -->
+  <section id="info" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-extrabold text-accent text-center mb-12">Travel & Stay</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+        <!-- Venue Details Card -->
+        <div class="bg-gray-50 p-6 rounded-2xl shadow-elegant">
+          <h3 class="text-2xl font-bold text-gray-800 mb-3 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            The Venue
+          </h3>
+          <p class="text-gray-600 font-semibold">Ogbomosho Town, Oyo State</p>
+          <p class="text-sm text-gray-500 mt-2">The exact venue will be communicated via the official invitation card.</p>
+          <a href="https://maps.app.goo.gl/ogbomoshoplaceholder" target="_blank" class="mt-4 inline-block text-accent hover:underline text-sm font-medium">Search Ogbomosho on Map</a>
+        </div>
+
+        <!-- Lodging Card (Hotel Details) -->
+        <div class="bg-gray-50 p-6 rounded-2xl shadow-elegant">
+          <h3 class="text-2xl font-bold text-gray-800 mb-3 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 10h.01M15 10h.01M5 21h14a2 2 0 002-2v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2z" />
+            </svg>
+            Nearby Hotels
+          </h3>
+          <p class="text-gray-600">For guests traveling, here are a few recommended accommodation options:</p>
+          <ul class="list-disc list-inside text-sm text-gray-600 mt-3 space-y-2">
+            <li><span class="font-semibold text-gray-800">Timsed Hotels & Holiday Resort:</span> A spacious and well-known hotel option in Ogbomosho.</li>
+            <li><span class="font-semibold text-gray-800">LAUTECH Guest House:</span> A reliable choice often used by visitors, located near the university.</li>
+            <li><span class="font-semibold text-gray-800">Short-Term Rentals:</span> Options like Airbnb are also available in the area.</li>
+          </ul>
+          <p class="text-sm text-gray-500 mt-4">Please book your accommodation early as December is a busy month.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 7. RSVP Form Section (Now number 7) -->
+  <section id="rsvp" class="py-16 sm:py-24 bg-gray-50">
+    <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl border-t-4 border-accent">
+        <h2 class="text-3xl font-extrabold text-accent text-center mb-4">Confirm Your Attendance</h2>
+        <p class="text-gray-600 text-center mb-8">
+          Kindly RSVP by **December 1st, 2025**. We can't wait to celebrate with you!
+        </p>
+
+        <form id="rsvp-form" class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Full Name(s)</label>
+            <input type="text" id="name" name="name" required
+                   class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-accent focus:border-accent">
+          </div>
+
+          <div>
+            <label for="attending" class="block text-sm font-medium text-gray-700">Are you attending?</label>
+            <select id="attending" name="attending" required
+                    class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-accent focus:border-accent appearance-none bg-white">
+              <option value="">Select an option</option>
+              <option value="yes">Yes, gladly accept</option>
+              <option value="no">No, respectfully decline</option>
+            </select>
+          </div>
+
+          <div id="guest-count-field" class="hidden">
+            <label for="guests" class="block text-sm font-medium text-gray-700">Number of Guests (Including yourself)</label>
+            <input type="number" id="guests" name="guests" min="1" max="6" value="1"
+                   class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-accent focus:border-accent">
+          </div>
+
+          <div>
+            <label for="diet" class="block text-sm font-medium text-gray-700">Dietary Restrictions / Notes (Optional)</label>
+            <textarea id="diet" name="diet" rows="3"
+                      class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-accent focus:border-accent"></textarea>
+          </div>
+
+          <button type="submit" class="w-full flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-xl text-white btn-primary shadow-lg hover:shadow-xl">
+            Submit RSVP
+          </button>
+        </form>
+        <div id="rsvp-message" class="mt-4 p-4 rounded-lg text-center hidden" role="alert"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Account Details for Support (UPDATED) -->
+  <section id="support" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="bg-gray-50 p-8 rounded-2xl shadow-2xl border-t-4 border-gold">
+        <h2 class="text-3xl font-extrabold text-accent mb-4">Support & Well Wishes</h2>
+        <p class="text-gray-600 mb-6">
+          More than gifts, we cherish your presence and prayers. If you wish to bless us financially as we start our new life, details are below.
+        </p>
+
+        <div class="space-y-6 text-left">
+          <!-- Eunice's Account Details -->
+          <div class="p-4 bg-white rounded-lg border border-primary/50 shadow-md">
+            <h3 class="text-lg font-bold text-accent mb-2">Eunice's Account (Kayode Eunice Oluwabunmi)</h3>
+            <div class="flex justify-between items-center border-b pb-2">
+              <span class="font-medium text-gray-700">Bank:</span>
+              <span class="font-semibold text-gray-900">GT (Guaranty Trust Bank)</span>
+            </div>
+            <div class="flex justify-between items-center pt-2">
+              <span class="font-medium text-gray-700">Account Number:</span>
+              <span id="eunice-account-number" class="font-semibold text-accent text-xl">0637904475</span>
+            </div>
+          </div>
+
+          <!-- Oluwatosin's Account Details -->
+          <div class="p-4 bg-white rounded-lg border border-primary/50 shadow-md">
+            <h3 class="text-lg font-bold text-accent mb-2">Oluwatosin's Account (Ayobami Oluwatosin Joseph)</h3>
+            <div class="flex justify-between items-center border-b pb-2">
+              <span class="font-medium text-gray-700">Bank:</span>
+              <span class="font-semibold text-gray-900">UBA (United Bank for Africa)</span>
+            </div>
+            <div class="flex justify-between items-center pt-2">
+              <span class="font-medium text-gray-700">Account Number:</span>
+              <span id="oluwatosin-account-number" class="font-semibold text-accent text-xl">2206968708</span>
+            </div>
+          </div>
+        </div>
+
+        <button onclick="copyAllAccountDetails()"
+                class="px-8 py-3 mt-8 text-base font-medium rounded-xl text-white btn-primary shadow-md hover:shadow-xl">
+          Copy All Account Numbers
+        </button>
+
+        <!-- Hidden input for copying (used by JS) -->
+        <input type="text" id="eunice-account-input" value="0637904475" style="position: absolute; left: -9999px;">
+        <input type="text" id="oluwatosin-account-input" value="2206968708" style="position: absolute; left: -9999px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Word of Prayer Section (Now number 9) -->
+  <section id="prayer" class="py-16 sm:py-24 bg-accent">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <h2 class="text-4xl font-extrabold text-indigo-200 mb-6">A Word of Prayer</h2>
+      <p class="text-xl font-light leading-relaxed mb-6">
+        Lord, we ask for your divine guidance and protection over our marriage. May our home be a sanctuary of peace, laughter, and faith. Let our love reflect your unending grace, and may we always honor you in our union. Bless our guests who travel far and near to share this special day with us. Amen.
+      </p>
+      <p class="text-lg font-semibold text-indigo-300">
+        With grateful hearts, Eunice & Oluwatosin
+      </p>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+    <p class="text-2xl font-light">Eunice & Oluwatosin</p>
+    <p class="mt-2 text-sm text-gray-400">December 6th, 2025 | #TheKingsBanquet25</p>
+    <p class="mt-6 text-xs text-gray-500">&copy; 2025 E&O Wedding Website. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- JavaScript for Interactions -->
+<script>
+  // --- Custom Modal/Message Box Functionality ---
+  function showMessageBox(message) {
+    const container = document.body;
+    // Remove any existing box
+    const existingBox = document.getElementById('custom-message-box');
+    if (existingBox) existingBox.remove();
+
+    // Create Modal Backdrop
+    const backdrop = document.createElement('div');
+    backdrop.id = 'custom-message-box';
+    backdrop.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 transition-opacity duration-300';
+    backdrop.innerHTML = `
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-2xl max-w-sm w-full transform transition-all duration-300 scale-95" onclick="event.stopPropagation()">
+                    <h3 class="text-xl font-bold text-accent mb-3">Notification</h3>
+                    <p class="text-gray-700 mb-6">${message}</p>
+                    <button id="close-message" class="w-full px-4 py-2 text-white btn-primary rounded-lg shadow-md">
+                        Close
+                    </button>
+                </div>
+            `;
+
+    container.appendChild(backdrop);
+
+    // Add event listeners to close the box
+    document.getElementById('close-message').addEventListener('click', () => backdrop.remove());
+    backdrop.addEventListener('click', () => backdrop.remove()); // Close on backdrop click
+
+    // Animate in the box
+    setTimeout(() => {
+      backdrop.querySelector('.scale-95').classList.remove('scale-95');
+    }, 10);
+  }
+
+  // --- Copy Account Details Functionality (UPDATED to copy both) ---
+  function copyAllAccountDetails() {
+    const euniceAccount = document.getElementById("eunice-account-input").value;
+    const oluwatosinAccount = document.getElementById("oluwatosin-account-input").value;
+
+    const combinedText =
+      `Eunice (GTB): ${euniceAccount}\n` +
+      `Oluwatosin (UBA): ${oluwatosinAccount}`;
+
+    // Create a temporary textarea to hold the combined text for copying
+    const tempTextArea = document.createElement('textarea');
+    tempTextArea.value = combinedText;
+    document.body.appendChild(tempTextArea);
+
+    // Select and copy the text
+    tempTextArea.select();
+    tempTextArea.setSelectionRange(0, 99999); // For mobile devices
+
+    try {
+      document.execCommand('copy');
+      showMessageBox("Both account numbers (Eunice & Oluwatosin) have been copied to your clipboard!");
+    } catch (err) {
+      showMessageBox("Could not copy account numbers. Please note them down manually.");
+    } finally {
+      // Remove the temporary textarea
+      document.body.removeChild(tempTextArea);
+    }
+  }
+
+  // --- Event Listeners and Form Logic ---
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const attendingSelect = document.getElementById('attending');
+    const guestCountField = document.getElementById('guest-count-field');
+    const rsvpForm = document.getElementById('rsvp-form');
+    const rsvpMessage = document.getElementById('rsvp-message');
+
+    // 1. Menu Toggle
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close menu when a link is clicked
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 100);
+      });
+    });
+
+    // 2. Conditional RSVP Guest Field
+    attendingSelect.addEventListener('change', () => {
+      if (attendingSelect.value === 'yes') {
+        guestCountField.classList.remove('hidden');
+        document.getElementById('guests').setAttribute('required', 'required');
+      } else {
+        guestCountField.classList.add('hidden');
+        document.getElementById('guests').removeAttribute('required');
+      }
+    });
+
+    // 3. RSVP Form Submission (Client-Side Simulation)
+    rsvpForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const attending = document.getElementById('attending').value;
+      const guests = document.getElementById('guests').value;
+
+      rsvpMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700');
+
+      if (attending === 'yes') {
+        const guestText = guests > 1 ? ` for a party of ${guests}` : '';
+        rsvpMessage.innerHTML = `Thank you, ${name}! Your attendance is confirmed${guestText}. We can't wait to celebrate with you!`;
+        rsvpMessage.classList.add('bg-green-100', 'text-green-700');
+        rsvpForm.reset();
+        guestCountField.classList.add('hidden');
+      } else if (attending === 'no') {
+        rsvpMessage.innerHTML = `We are sorry you won't be able to make it, ${name}. We'll celebrate with you another time!`;
+        rsvpMessage.classList.add('bg-red-100', 'text-red-700');
+        rsvpForm.reset();
+      } else {
+        showMessageBox('Please select whether you are attending or declining.');
+        rsvpMessage.classList.add('hidden');
+      }
+
+      // Clear the message after 5 seconds
+      setTimeout(() => {
+        rsvpMessage.classList.add('hidden');
+      }, 5000);
+    });
+  });
+</script>
+</body>
+</html>
+
