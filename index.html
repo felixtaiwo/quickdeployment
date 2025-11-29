@@ -4,1437 +4,1495 @@
 
 <head>
 
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <title>The Royal Banquet of Eunice & Oluwatosin</title>
+    <title>The Royal Banquet of Eunice & Oluwatosin</title>
 
-   <!-- Load Tailwind CSS -->
+    <!-- Load Tailwind CSS -->
 
-   <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-   <!-- Load Romantic Fonts: Great Vibes (Script/Heading) and Montserrat (Sans-serif/Body) -->
+    <!-- Load Romantic Fonts: Great Vibes (Script/Heading) and Montserrat (Sans-serif/Body) -->
 
-   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
 
-   
 
-   <style>
+    <style>
 
-       /* Custom Colors: Lavender and Olive Green */
+        /* Custom Colors: Lavender and Olive Green */
 
-       :root {
+        :root {
 
-           --color-primary: #8e8a9f; /* Soft Lavender */
+            --color-primary: #8e8a9f; /* Soft Lavender */
 
-           --color-secondary: #556b2f; /* Olive Green - Deep, rich accent */
+            --color-secondary: #556b2f; /* Olive Green - Deep, rich accent */
 
-           --color-gold: #d97706; /* Gold/Accent - For buttons/highlights */
+            --color-gold: #d97706; /* Gold/Accent - For buttons/highlights */
 
-       }
+        }
 
- 
 
-       /* Set romantic fonts */
 
-       body {
+        /* Set romantic fonts */
 
-           font-family: 'Montserrat', sans-serif; /* Body Text */
+        body {
 
-           background-color: #fcfaf8; /* Soft cream background */
+            font-family: 'Montserrat', sans-serif; /* Body Text */
 
-           color: #333;
+            background-color: #fcfaf8; /* Soft cream background */
 
-       }
+            color: #333;
 
-       h1, h2, h3 {
+        }
 
-           font-family: 'Great Vibes', cursive; /* Elegant Script Headings */
+        h1, h2, h3 {
 
-           font-weight: 400; /* Great Vibes doesn't support bold */
+            font-family: 'Great Vibes', cursive; /* Elegant Script Headings */
 
-           letter-spacing: 1px;
+            font-weight: 400; /* Great Vibes doesn't support bold */
 
-       }
+            letter-spacing: 1px;
 
-       
+        }
 
-       /* Utility Classes */
 
-       .text-accent {
 
-           color: var(--color-secondary); /* Olive Green Text */
+        /* Utility Classes */
 
-       }
+        .text-accent {
 
-       .bg-accent {
+            color: var(--color-secondary); /* Olive Green Text */
 
-           background-color: var(--color-secondary);
+        }
 
-       }
+        .bg-accent {
 
-       .btn-primary {
+            background-color: var(--color-secondary);
 
-           background-color: var(--color-gold); /* Gold Accent Button */
+        }
 
-           transition: all 0.3s ease;
+        .btn-primary {
 
-       }
+            background-color: var(--color-gold); /* Gold Accent Button */
 
-       .btn-primary:hover {
+            transition: all 0.3s ease;
 
-           background-color: #b45309;
+        }
 
-           transform: scale(1.05);
+        .btn-primary:hover {
 
-       }
+            background-color: #b45309;
 
-       .shadow-elegant {
+            transform: scale(1.05);
 
-           box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
 
-       }
+        .shadow-elegant {
 
-       .border-primary {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
-           border-color: var(--color-primary); /* Lavender border */
+        }
 
-       }
+        .border-primary {
 
-       .bg-primary-light {
+            border-color: var(--color-primary); /* Lavender border */
 
-            background-color: #f7f7fa; /* Very light lavender tint */
+        }
 
-       }
+        .bg-primary-light {
 
-       .text-primary-dark {
+             background-color: #f7f7fa; /* Very light lavender tint */
 
-           color: var(--color-primary);
+        }
 
-       }
+        .text-primary-dark {
 
- 
+            color: var(--color-primary);
 
-       /* Flower Motif Decoration */
+        }
 
-       .flower-divider {
 
-           position: relative;
 
-           height: 1rem;
+        /* Flower Motif Decoration */
 
-           margin: 2rem 0;
+        .flower-divider {
 
-           display: flex;
+            position: relative;
 
-           justify-content: center;
+            height: 1rem;
 
-           align-items: center;
+            margin: 2rem 0;
 
-       }
+            display: flex;
 
-       .flower-divider::before,
+            justify-content: center;
 
-       .flower-divider::after {
+            align-items: center;
 
-           content: '';
+        }
 
-           position: absolute;
+        .flower-divider::before,
 
-           height: 2px;
+        .flower-divider::after {
 
-           width: 40%;
+            content: '';
 
-           background: linear-gradient(to right, #e5e7eb, var(--color-primary), #e5e7eb);
+            position: absolute;
 
-           top: 50%;
+            height: 2px;
 
-           transform: translateY(-50%);
+            width: 40%;
 
-       }
+            background: linear-gradient(to right, #e5e7eb, var(--color-primary), #e5e7eb);
 
-       .flower-divider::before { left: 0; }
+            top: 50%;
 
-       .flower-divider::after { right: 0; }
+            transform: translateY(-50%);
 
-       .flower-icon {
+        }
 
-           z-index: 10;
+        .flower-divider::before { left: 0; }
 
-           color: var(--color-secondary);
+        .flower-divider::after { right: 0; }
 
-           font-size: 1.5rem;
+        .flower-icon {
 
-           /* Simple SVG of a stylized flower */
+            z-index: 10;
 
-           content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='%23556b2f' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M5 3v4M3 5h4M6 17v4M17 6H13M18 10V6M18 10l-4 4m0-4l4 4m-4-4v4m0-4h4M6 10H2M6 10l4 4M2 10l4 4m4-4H6m-4-4V6m0 4v4m4-4h4m-4 0v4m4 0v-4m-4 0v4' /%3E%3C/svg%3E");
+            color: var(--color-secondary);
 
-           width: 30px;
+            font-size: 1.5rem;
 
-           height: 30px;
+            /* Simple SVG of a stylized flower */
 
-       }
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='%23556b2f' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M5 3v4M3 5h4M6 17v4M17 6H13M18 10V6M18 10l-4 4m0-4l4 4m-4-4v4m0-4h4M6 10H2M6 10l4 4M2 10l4 4m4-4H6m-4-4V6m0 4v4m4-4h4m-4 0v4m4 0v-4m-4 0v4' /%3E%3C/svg%3E");
 
- 
+            width: 30px;
 
-       /* Hero Background with Elegant Script */
+            height: 30px;
 
-       .hero-background {
+        }
 
-           background-image: url('https://placehold.co/1200x800/d8dae7/333333?text=Eunice+%26+Oluwatosin');
 
-           background-size: cover;
 
-           background-position: center;
+.hero-background {
+    position: relative;
+    background-image: url('couple1.jpeg');
+    background-size: cover;
+    background-position: center 10%; /* move image down */
+    background-attachment: fixed;
+    min-height: 80vh;
+}
 
-           background-attachment: fixed;
+/* overlay to lighten + soften the image */
+.hero-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-           min-height: 80vh;
+    background: rgba(255, 255, 255, 0.55);
 
-       }
+    filter: brightness(0.6) saturate(0.6);
 
-       .hero-title {
+    pointer-events: none;
+}
 
-           font-family: 'Great Vibes', cursive;
 
-           font-size: 6rem; /* Large script */
 
-       }
+        .hero-title {
 
-       .hero-date {
+            font-family: 'Great Vibes', cursive;
 
-           font-family: 'Montserrat', sans-serif;
+            font-size: 6rem; /* Large script */
 
-           font-weight: 600;
+        }
 
-       }
-
- 
-
-       /* Override for readability in Story section */
-
-       #story h3 {
+        .hero-date {
 
             font-family: 'Montserrat', sans-serif;
 
-            font-weight: 700;
+            font-weight: 600;
 
-            letter-spacing: 0;
+        }
 
-       }
 
-   </style>
+
+        /* Override for readability in Story section */
+
+        #story h3 {
+
+             font-family: 'Montserrat', sans-serif;
+
+             font-weight: 700;
+
+             letter-spacing: 0;
+
+        }
+
+    </style>
 
 </head>
 
 <body class="antialiased scroll-smooth">
 
- 
 
-   <!-- Header & Navigation -->
+<!-- Header & Navigation -->
 
-   <header class="sticky top-0 z-20 bg-white/95 backdrop-blur-sm shadow-md">
+<header class="sticky top-0 z-20 bg-white/95 backdrop-blur-sm shadow-md">
 
-       <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
 
-           <!-- Logo/Names (Script Font) -->
+        <!-- Logo/Names (Script Font) -->
 
-           <a href="#" class="text-3xl text-accent tracking-wider font-bold">
+        <a href="#" class="text-3xl text-accent tracking-wider font-bold">
 
-               Eunice & Oluwatosin
+            Eunice & Oluwatosin
 
-           </a>
+        </a>
 
- 
 
-           <!-- Desktop Navigation Links -->
+        <!-- Desktop Navigation Links -->
 
-           <div class="hidden md:flex space-x-6 text-sm font-semibold">
+        <div class="hidden md:flex space-x-6 text-sm font-semibold">
 
-               <a href="#details" class="text-gray-600 hover:text-accent transition duration-150">The Day</a>
+            <a href="#details" class="text-gray-600 hover:text-accent transition duration-150">The Day</a>
 
-               <a href="#story" class="text-gray-600 hover:text-accent transition duration-150">Our Story</a>
+            <a href="#story" class="text-gray-600 hover:text-accent transition duration-150">Our Story</a>
 
-               <a href="#party" class="text-gray-600 hover:text-accent transition duration-150">The Party</a>
+            <a href="#party" class="text-gray-600 hover:text-accent transition duration-150">The Party</a>
 
-               <a href="#photos" class="text-gray-600 hover:text-accent transition duration-150">Photos</a>
+            <a href="#photos" class="text-gray-600 hover:text-accent transition duration-150">Photos</a>
 
-               <a href="#texts" class="text-gray-600 hover:text-accent transition duration-150">Scripture</a>
+            <a href="#texts" class="text-gray-600 hover:text-accent transition duration-150">Scripture</a>
 
-               <a href="#rsvp" class="text-gray-600 hover:text-accent transition duration-150">RSVP</a>
+            <a href="#rsvp" class="text-gray-600 hover:text-accent transition duration-150">RSVP</a>
 
-               <a href="#support" class="text-gray-600 hover:text-accent transition duration-150">Support</a>
+            <a href="#support" class="text-gray-600 hover:text-accent transition duration-150">Support</a>
 
-           </div>
+        </div>
 
- 
 
-           <!-- Mobile Menu Button -->
+        <!-- Mobile Menu Button -->
 
-           <button id="menu-button" class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-150">
+        <button id="menu-button"
+                class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-150">
 
-               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor" stroke-width="2">
 
-                   <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"/>
 
-               </svg>
+            </svg>
 
-           </button>
+        </button>
 
-       </nav>
+    </nav>
 
-       <!-- Mobile Menu Dropdown -->
+    <!-- Mobile Menu Dropdown -->
 
-       <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 bg-white border-t">
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 bg-white border-t">
 
-           <a href="#details" class="block text-gray-600 hover:text-accent transition duration-150">The Day</a>
+        <a href="#details" class="block text-gray-600 hover:text-accent transition duration-150">The Day</a>
 
-           <a href="#story" class="block text-gray-600 hover:text-accent transition duration-150">Our Story</a>
+        <a href="#story" class="block text-gray-600 hover:text-accent transition duration-150">Our Story</a>
 
-           <a href="#party" class="block text-gray-600 hover:text-accent transition duration-150">The Party</a>
+        <a href="#party" class="block text-gray-600 hover:text-accent transition duration-150">The Party</a>
 
-           <a href="#photos" class="block text-gray-600 hover:text-accent transition duration-150">Photos</a>
+        <a href="#photos" class="block text-gray-600 hover:text-accent transition duration-150">Photos</a>
 
-           <a href="#texts" class="block text-gray-600 hover:text-accent transition duration-150">Scripture</a>
+        <a href="#texts" class="block text-gray-600 hover:text-accent transition duration-150">Scripture</a>
 
-           <a href="#rsvp" class="block text-gray-600 hover:text-accent transition duration-150">RSVP</a>
+        <a href="#rsvp" class="block text-gray-600 hover:text-accent transition duration-150">RSVP</a>
 
-           <a href="#support" class="block text-gray-600 hover:text-accent transition duration-150">Support</a>
+        <a href="#support" class="block text-gray-600 hover:text-accent transition duration-150">Support</a>
 
-       </div>
+    </div>
 
-   </header>
+</header>
 
- 
 
-   <main>
+<main>
 
-       <!-- 1. Hero Section (Front Page: Names, Date, Location) -->
+    <!-- 1. Hero Section (Front Page: Names, Date, Location) -->
 
-       <section class="hero-background flex items-center justify-center p-4">
+    <section class="hero-background flex items-center justify-center p-4">
 
-           <div class="bg-white/80 backdrop-blur-sm p-8 sm:p-12 rounded-xl text-center shadow-2xl border-4 border-primary/50 max-w-lg w-full">
+        <div class="bg-white/80 backdrop-blur-sm p-8 sm:p-12 rounded-xl text-center shadow-2xl border-4 border-primary/50 max-w-lg w-full">
 
-               <p class="text-2xl text-accent mb-4">We're getting married!</p>
+            <p class="text-2xl text-accent mb-4">We're getting married!</p>
 
-               <h1 class="hero-title text-accent leading-none">
+            <h1 class="hero-title text-accent leading-none">
 
-                   Eunice & Oluwatosin
+                Eunice & Oluwatosin
 
-               </h1>
+            </h1>
 
-               <div class="my-6">
+            <div class="my-6">
 
-                   <p class="text-3xl sm:text-4xl hero-date text-gray-800">
+                <p class="text-3xl sm:text-4xl hero-date text-gray-800">
 
-                       December 6th, 2025
+                    December 6th, 2025
 
-                   </p>
+                </p>
 
-                   <p class="text-lg text-gray-600 mt-2">
+                <p class="text-lg text-gray-600 mt-2">
 
-                       Ogbomosho Town, Oyo State
+                    Ogbomosho Town, Oyo State
 
-                   </p>
+                </p>
 
-               </div>
+            </div>
 
-               <a href="#rsvp" class="inline-block px-8 py-3 mt-4 text-base font-medium rounded-xl text-white btn-primary shadow-lg">
+            <a href="#rsvp"
+               class="inline-block px-8 py-3 mt-4 text-base font-medium rounded-xl text-white btn-primary shadow-lg">
 
-                   RSVP Now
+                RSVP Now
 
-               </a>
+            </a>
 
-           </div>
+        </div>
 
-       </section>
+    </section>
 
- 
 
-       <!-- Wedding Details (Schedule) Section -->
+    <!-- Wedding Details (Schedule) Section -->
 
-       <section id="details" class="py-16 sm:py-24 bg-gray-50">
+    <section id="details" class="py-16 sm:py-24 bg-gray-50">
 
-           <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-               <h2 class="text-5xl text-accent mb-4">The Wedding Day Schedule</h2>
+            <h2 class="text-5xl text-accent mb-4">The Wedding Day Schedule</h2>
 
-               <div class="flower-divider"><div class="flower-icon"></div></div>
+            <div class="flower-divider">
+                <div class="flower-icon"></div>
+            </div>
 
-               <p class="text-lg text-gray-600 mb-10">
+            <p class="text-lg text-gray-600 mb-10">
 
-                   The colors of the day are <span class="font-semibold text-primary-dark">Lavender</span> and <span class="font-semibold text-accent">Olive Green</span>.
+                The colors of the day are <span class="font-semibold text-primary-dark">Lavender</span> and <span
+                    class="font-semibold text-accent">Olive Green</span>.
 
-               </p>
+            </p>
 
-               
 
-               <div class="space-y-8">
+            <div class="space-y-8">
 
-                   <!-- Event 1: Ceremony -->
+                <!-- Event 1: Ceremony -->
 
-                   <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-elegant flex flex-col sm:flex-row items-center sm:items-start text-left hover:shadow-xl transition duration-300 border-l-4 border-primary">
+                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-elegant flex flex-col sm:flex-row items-center sm:items-start text-left hover:shadow-xl transition duration-300 border-l-4 border-primary">
 
-                       <div class="sm:w-1/4 w-full text-center sm:text-right sm:pr-8 mb-4 sm:mb-0 border-b sm:border-b-0 sm:border-r border-gray-200">
+                    <div class="sm:w-1/4 w-full text-center sm:text-right sm:pr-8 mb-4 sm:mb-0 border-b sm:border-b-0 sm:border-r border-gray-200">
 
-                           <p class="text-4xl font-semibold text-gray-800">11:00</p>
+                        <p class="text-4xl font-semibold text-gray-800">11:00</p>
 
-                           <p class="text-sm text-gray-500 uppercase tracking-widest">AM</p>
+                        <p class="text-sm text-gray-500 uppercase tracking-widest">AM</p>
 
-                       </div>
+                    </div>
 
-                       <div class="sm:w-3/4 w-full sm:pl-8">
+                    <div class="sm:w-3/4 w-full sm:pl-8">
 
-                           <h3 class="text-3xl text-accent font-semibold">Solemnization & Wedding Ceremony</h3>
+                        <h3 class="text-3xl text-accent font-semibold">Solemnization & Wedding Ceremony</h3>
 
-                           <p class="mt-2 text-gray-600">
+                        <p class="mt-2 text-gray-600">
 
-                               Please join us as Eunice and Oluwatosin exchange vows. The venue will be stated in your invitation card.
+                            Please join us as Eunice and Oluwatosin exchange vows. The venue will be stated in your
+                            invitation card.
 
-                           </p>
+                        </p>
 
-                           <p class="text-sm text-gray-500 mt-1">Attire: Lavender & Olive Green | Location: As stated in the invite</p>
+                        <p class="text-sm text-gray-500 mt-1">Attire: Lavender & Olive Green | Location: As stated in
+                            the invite</p>
 
-                       </div>
+                    </div>
 
-                   </div>
+                </div>
 
- 
 
-                   <!-- Event 2: Reception -->
+                <!-- Event 2: Reception -->
 
-                   <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-elegant flex flex-col sm:flex-row items-center sm:items-start text-left hover:shadow-xl transition duration-300 border-l-4 border-primary">
+                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-elegant flex flex-col sm:flex-row items-center sm:items-start text-left hover:shadow-xl transition duration-300 border-l-4 border-primary">
 
-                       <div class="sm:w-1/4 w-full text-center sm:text-right sm:pr-8 mb-4 sm:mb-0 border-b sm:border-b-0 sm:border-r border-gray-200">
+                    <div class="sm:w-1/4 w-full text-center sm:text-right sm:pr-8 mb-4 sm:mb-0 border-b sm:border-b-0 sm:border-r border-gray-200">
 
-                           <p class="text-4xl font-semibold text-gray-800">2:00</p>
+                        <p class="text-4xl font-semibold text-gray-800">2:00</p>
 
-                           <p class="text-sm text-gray-500 uppercase tracking-widest">PM</p>
+                        <p class="text-sm text-gray-500 uppercase tracking-widest">PM</p>
 
-                       </div>
+                    </div>
 
-                       <div class="sm:w-3/4 w-full sm:pl-8">
+                    <div class="sm:w-3/4 w-full sm:pl-8">
 
-                           <h3 class="text-3xl text-accent font-semibold">Reception & Celebration</h3>
+                        <h3 class="text-3xl text-accent font-semibold">Reception & Celebration</h3>
 
-                           <p class="mt-2 text-gray-600">
+                        <p class="mt-2 text-gray-600">
 
-                               The reception dinner and celebration will take place immediately after the ceremony. Lunch, drinks, and dancing to follow!
+                            The reception dinner and celebration will take place immediately after the ceremony. Lunch,
+                            drinks, and dancing to follow!
 
-                           </p>
+                        </p>
 
-                           <p class="text-sm text-gray-500 mt-1">Location: As stated in the invite</p>
+                        <p class="text-sm text-gray-500 mt-1">Location: As stated in the invite</p>
 
-                       </div>
+                    </div>
 
-                   </div>
+                </div>
 
-               </div>
+            </div>
 
-           </div>
+        </div>
 
-       </section>
+    </section>
 
- 
 
-       <!-- 2. Our Story Section (How They Met - Eunice First, then Oluwatosin) -->
+    <!-- 2. Our Story Section (How They Met - Eunice First, then Oluwatosin) -->
 
-       <section id="story" class="py-16 sm:py-24 bg-primary-light">
+    <section id="story" class="py-16 sm:py-24 bg-primary-light">
 
-           <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-               <h2 class="text-5xl text-accent text-center mb-4">Our Story</h2>
+            <h2 class="text-5xl text-accent text-center mb-4">Our Story</h2>
 
-               <div class="flower-divider"><div class="flower-icon"></div></div>
+            <div class="flower-divider">
+                <div class="flower-icon"></div>
+            </div>
 
-               
 
-               <!-- Eunice's Write-up -->
+            <!-- Eunice's Write-up -->
 
-               <div class="md:flex md:space-x-12 mb-16">
+            <div class="md:flex md:space-x-12 mb-16">
 
-                   <div class="md:w-1/3 flex justify-center mb-6 md:mb-0">
+                <div class="md:w-1/3 flex justify-center mb-6 md:mb-0">
 
-                       <img src="https://placehold.co/200x200/556b2f/ffffff?text=Eunice" alt="Eunice Photo" class="rounded-full object-cover w-48 h-48 border-4 border-primary shadow-lg">
+                    <img src="https://placehold.co/200x200/556b2f/ffffff?text=Eunice" alt="Eunice Photo"
+                         class="rounded-full object-cover w-48 h-48 border-4 border-primary shadow-lg">
 
-                   </div>
+                </div>
 
-                   <div class="md:w-2/3">
+                <div class="md:w-2/3">
 
-                       <h3 class="text-3xl text-gray-800 mb-4 border-b pb-2 border-accent/20">Eunice's Perspective</h3>
+                    <h3 class="text-3xl text-gray-800 mb-4 border-b pb-2 border-accent/20">Eunice's Perspective</h3>
 
-                       <p class="text-lg text-gray-600 leading-relaxed">
+                    <p class="text-lg text-gray-600 leading-relaxed">
 
-                           I saw him first in UCH Christian Fellowship, he was fervent, loves God and committed to nurturing God's people. We were in the same unit then, Drama Unit and I also got to know he's a senior colleague and that was all to it, a brethren 🥹. A year later God decided it's time for a love story written about us to come into physical manifestation, he proposed and I said no, a serious one😅but he recieved it in good fate and returned to God who had convinced him, but mercy said no🙂‍↔️, I knew this not because he told me he's been actively praying despite the no but for the drastic transformation and convictions God gave me even when he's stopped chasing actively. After all said and  done, I said **YES** and it's been a very ecstatic experience all the way, beyond spiritual conviction, He has proven to be a man for me in words and every action and I'm grateful to God for this.
+                        I saw him first in UCH Christian Fellowship, he was fervent, loves God and committed to
+                        nurturing God's people. We were in the same unit then, Drama Unit and I also got to know he's a
+                        senior colleague and that was all to it, a brethren 🥹. A year later God decided it's time for a
+                        love story written about us to come into physical manifestation, he proposed and I said no, a
+                        serious one😅but he recieved it in good fate and returned to God who had convinced him, but mercy
+                        said no🙂‍↔️, I knew this not because he told me he's been actively praying despite the no but
+                        for the drastic transformation and convictions God gave me even when he's stopped chasing
+                        actively. After all said and done, I said **YES** and it's been a very ecstatic experience all
+                        the way, beyond spiritual conviction, He has proven to be a man for me in words and every action
+                        and I'm grateful to God for this.
 
-                       </p>
+                    </p>
 
-                   </div>
+                </div>
 
-               </div>
+            </div>
 
- 
 
-               <!-- Oluwatosin's Write-up -->
+            <!-- Oluwatosin's Write-up -->
 
-               <div class="md:flex md:space-x-12 flex-row-reverse">
+            <div class="md:flex md:space-x-12 flex-row-reverse">
 
-                   <div class="md:w-1/3 flex justify-center mb-6 md:mb-0">
+                <div class="md:w-1/3 flex justify-center mb-6 md:mb-0">
 
-                       <img src="https://placehold.co/200x200/8e8a9f/ffffff?text=Oluwatosin" alt="Oluwatosin Photo" class="rounded-full object-cover w-48 h-48 border-4 border-primary shadow-lg">
+                    <img src="https://placehold.co/200x200/8e8a9f/ffffff?text=Oluwatosin" alt="Oluwatosin Photo"
+                         class="rounded-full object-cover w-48 h-48 border-4 border-primary shadow-lg">
 
-                   </div>
+                </div>
 
-                   <div class="md:w-2/3 text-right md:text-left">
+                <div class="md:w-2/3 text-right md:text-left">
 
-                       <h3 class="text-3xl text-gray-800 mb-4 border-b pb-2 border-accent/20">Oluwatosin's Perspective</h3>
+                    <h3 class="text-3xl text-gray-800 mb-4 border-b pb-2 border-accent/20">Oluwatosin's Perspective</h3>
 
-                       <p class="text-lg text-gray-600 leading-relaxed">
+                    <p class="text-lg text-gray-600 leading-relaxed">
 
-                           The story of how I met Eunice is one that could only have been by supernatural orchestration. It was on a _Twosday, you know- a day meant for two people in love 🤣_. The drama unit of my school fellowship (Calvary Love Theatre) was to have a drama rehearsal that evening. I met Eunice already on the field- or was she the one who met me there? Can't remember the details now. But what stood out that day was that Eunice and I were the only people who came for that meeting. What was then supposed to be a drama rehearsal turned out to be the beginning of a talking stage🤣. I've been seeing her in the fellowship, UCHCF, before then, but that was the first time I would see her upclose. We spoke about Ogbomosho where her parents lived, I was really captured by her deep Yoruba accent sprinkled with Ogbomosho dialect- Kai! If you know, you know.
+                        The story of how I met Eunice is one that could only have been by supernatural orchestration. It
+                        was on a _Twosday, you know- a day meant for two people in love 🤣_. The drama unit of my school
+                        fellowship (Calvary Love Theatre) was to have a drama rehearsal that evening. I met Eunice
+                        already on the field- or was she the one who met me there? Can't remember the details now. But
+                        what stood out that day was that Eunice and I were the only people who came for that meeting.
+                        What was then supposed to be a drama rehearsal turned out to be the beginning of a talking
+                        stage🤣. I've been seeing her in the fellowship, UCHCF, before then, but that was the first time
+                        I would see her upclose. We spoke about Ogbomosho where her parents lived, I was really captured
+                        by her deep Yoruba accent sprinkled with Ogbomosho dialect- Kai! If you know, you know.
 
-                           <br><br>
+                        <br><br>
 
-                           We also spoke about school activities, upcoming tests and the needed preparations. I initially had no intention, I was only trying to be a good senior colleague, telling her about past questions, ways to answer them, etc.
+                        We also spoke about school activities, upcoming tests and the needed preparations. I initially
+                        had no intention, I was only trying to be a good senior colleague, telling her about past
+                        questions, ways to answer them, etc.
 
-                           But after we departed that day, I thought within my mind, this lady is not bad oo🥹. She might be the perfect person for me. But then, my head countered and I was like, oh boy! she is not your type jor.
+                        But after we departed that day, I thought within my mind, this lady is not bad oo🥹. She might be
+                        the perfect person for me. But then, my head countered and I was like, oh boy! she is not your
+                        type jor.
 
-                           <br><br>
+                        <br><br>
 
-                           Days ran into weeks and then months. I couldn't get Eunice out of my thought. She had one profile picture on her WhatsApp then, anytime I saw it, it gave me hormonal surge. Adrenaline up, dopamine up, Testosterone up... I will stare at that picture for hours, analysing her smile, her lips, her teeth, everything just looked perfecto.
+                        Days ran into weeks and then months. I couldn't get Eunice out of my thought. She had one
+                        profile picture on her WhatsApp then, anytime I saw it, it gave me hormonal surge. Adrenaline
+                        up, dopamine up, Testosterone up... I will stare at that picture for hours, analysing her smile,
+                        her lips, her teeth, everything just looked perfecto.
 
-                           <br><br>
+                        <br><br>
 
-                           She then celebrated her birthday and I posted that picture on my status to celebrate her. As if confirming my thoughts, a friend of mine entered my dm and said 'this lady has such a beautiful smile, is she our sister?'
+                        She then celebrated her birthday and I posted that picture on my status to celebrate her. As if
+                        confirming my thoughts, a friend of mine entered my dm and said 'this lady has such a beautiful
+                        smile, is she our sister?'
 
-                           'May be' I smiled in agreement.
+                        'May be' I smiled in agreement.
 
-                           After that time, Eunice became more than just any sister but my sister. I was always watching out for her in church services. I would go ask her friend when I didn't see her, after all, I was in counselling and follow up unit, I was just doing my job🤣🤣.
+                        After that time, Eunice became more than just any sister but my sister. I was always watching
+                        out for her in church services. I would go ask her friend when I didn't see her, after all, I
+                        was in counselling and follow up unit, I was just doing my job🤣🤣.
 
-                           <br><br>
+                        <br><br>
 
-                           Many things happened afterwards. Like praying to God and getting my convictions to propose to her just for this sister to come back in a month's time to say "the Holy spirit is not leading her in my direction".
+                        Many things happened afterwards. Like praying to God and getting my convictions to propose to
+                        her just for this sister to come back in a month's time to say "the Holy spirit is not leading
+                        her in my direction".
 
-                           Everything first blur🥹🥹. Which Holy Spirit? I sha went to my room to cry🤣, told some few people who encouraged me and I raised a prayer altar on her behalf. I would go around UCH every night and declare "Eunice, the lord will open your eyes, the lord will touch your heart, Eu is mine🥹"
+                        Everything first blur🥹🥹. Which Holy Spirit? I sha went to my room to cry🤣, told some few people
+                        who encouraged me and I raised a prayer altar on her behalf. I would go around UCH every night
+                        and declare "Eunice, the lord will open your eyes, the lord will touch your heart, Eu is mine🥹"
 
-                           <br><br>
+                        <br><br>
 
-                           Men and brethren, God taught me something through that experience. GOD DOES NOT LIE. His words are anchors, you can hold on to them even when circumstances says otherwise. His words are sure, you can bank on them.
+                        Men and brethren, God taught me something through that experience. GOD DOES NOT LIE. His words
+                        are anchors, you can hold on to them even when circumstances says otherwise. His words are sure,
+                        you can bank on them.
 
-                           Today, I am the happiest man in the world because I got a treasure from God whose price is FAR ABOVE RUBIES, something more than gold.
+                        Today, I am the happiest man in the world because I got a treasure from God whose price is FAR
+                        ABOVE RUBIES, something more than gold.
 
-                       </p>
+                    </p>
 
-                   </div>
+                </div>
 
-               </div>
+            </div>
 
-           </div>
+        </div>
 
-       </section>
+    </section>
 
-       
 
-       <!-- 3. Wedding Party Section -->
+    <!-- 3. Wedding Party Section -->
 
-       <section id="party" class="py-16 sm:py-24 bg-white">
+    <section id="party" class="py-16 sm:py-24 bg-white">
 
-           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-               <h2 class="text-5xl text-accent mb-4">The Wedding Train</h2>
+            <h2 class="text-5xl text-accent mb-4">The Wedding Train</h2>
 
-               <div class="flower-divider"><div class="flower-icon"></div></div>
+            <div class="flower-divider">
+                <div class="flower-icon"></div>
+            </div>
 
-               <p class="text-lg text-gray-600 mb-10 max-w-3xl mx-auto">
+            <p class="text-lg text-gray-600 mb-10 max-w-3xl mx-auto">
 
-                   We are incredibly thankful for the love and support from our family and friends who will stand with us on our special day.
+                We are incredibly thankful for the love and support from our family and friends who will stand with us
+                on our special day.
 
-               </p>
+            </p>
 
- 
 
-               <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left max-w-5xl mx-auto">
 
-                   <!-- Bridal Train -->
+                <!-- Bridal Train -->
 
-                   <div class="bg-primary-light p-6 rounded-2xl shadow-elegant border-t-4 border-primary md:col-span-1">
+                <div class="bg-primary-light p-6 rounded-2xl shadow-elegant border-t-4 border-primary md:col-span-1">
 
-                       <h3 class="text-3xl text-gray-800 mb-4 border-b pb-2 border-primary/50">Bridal Train</h3>
+                    <h3 class="text-3xl text-gray-800 mb-4 border-b pb-2 border-primary/50">Bridal Train</h3>
 
-                       <ul class="space-y-3 text-gray-600 font-medium">
+                    <ul class="space-y-3 text-gray-600 font-medium">
 
-                           <li class="font-semibold text-accent">Best Man: Dr. Israel Ojo</li>
+                        <li class="font-semibold text-accent">Best Man: Dr. Israel Ojo</li>
 
-                           <li class="font-semibold text-accent">Chief Brides Maid: Dr. Fiyinfoluwa Ogundoyin</li>
+                        <li class="font-semibold text-accent">Chief Brides Maid: Dr. Fiyinfoluwa Ogundoyin</li>
 
-                           <li class="font-semibold text-accent">Little Bride: Mercy Odunola</li>
+                        <li class="font-semibold text-accent">Little Bride: Mercy Odunola</li>
 
-                       </ul>
+                    </ul>
 
-                   </div>
+                </div>
 
- 
 
-                   <!-- Asoebi Ladies -->
+                <!-- Asoebi Ladies -->
 
-                   <div class="bg-primary-light p-6 rounded-2xl shadow-elegant border-t-4 border-primary md:col-span-1">
+                <div class="bg-primary-light p-6 rounded-2xl shadow-elegant border-t-4 border-primary md:col-span-1">
 
-                       <h3 class="text-3xl text-gray-800 mb-4 border-b pb-2 border-primary/50">Asoebi Ladies</h3>
+                    <h3 class="text-3xl text-gray-800 mb-4 border-b pb-2 border-primary/50">Asoebi Ladies</h3>
 
-                       <ul class="space-y-3 text-gray-600 font-medium">
+                    <ul class="space-y-3 text-gray-600 font-medium">
 
-                           <li>PT. Deborah Adegbaju</li>
+                        <li>PT. Deborah Adegbaju</li>
 
-                           <li>Ns. Deborah Oyerinde</li>
+                        <li>Ns. Deborah Oyerinde</li>
 
-                           <li>Dr. Fiyinfoluwa Ogundoyin</li>
+                        <li>Dr. Fiyinfoluwa Ogundoyin</li>
 
-                           <li>Anat. Lois Ogunjimi</li>
+                        <li>Anat. Lois Ogunjimi</li>
 
-                           <li>Dr. Mary Babatunde</li>
+                        <li>Dr. Mary Babatunde</li>
 
-                           <li>Dr. Mayowa Oluwi</li>
+                        <li>Dr. Mayowa Oluwi</li>
 
-                       </ul>
+                    </ul>
 
-                   </div>
+                </div>
 
- 
 
-                   <!-- Men in Agbada -->
+                <!-- Men in Agbada -->
 
-                   <div class="bg-primary-light p-6 rounded-2xl shadow-elegant border-t-4 border-primary md:col-span-1">
+                <div class="bg-primary-light p-6 rounded-2xl shadow-elegant border-t-4 border-primary md:col-span-1">
 
-                       <h3 class="text-3xl text-gray-800 mb-4 border-b pb-2 border-primary/50">Men in Agbada</h3>
+                    <h3 class="text-3xl text-gray-800 mb-4 border-b pb-2 border-primary/50">Men in Agbada</h3>
 
-                       <ul class="space-y-3 text-gray-600 font-medium">
+                    <ul class="space-y-3 text-gray-600 font-medium">
 
-                           <li>Dr. Ayomide Adeyilola</li>
+                        <li>Dr. Ayomide Adeyilola</li>
 
-                           <li>Dr. Caleb Jonah</li>
+                        <li>Dr. Caleb Jonah</li>
 
-                           <li>Dr. David Adetula</li>
+                        <li>Dr. David Adetula</li>
 
-                           <li>Dr. Ifeoluwa Okunola</li>
+                        <li>Dr. Ifeoluwa Okunola</li>
 
-                           <li>Dr. Israel Ojo</li>
+                        <li>Dr. Israel Ojo</li>
 
-                           <li>Dr. Opeyemi Alabi</li>
+                        <li>Dr. Opeyemi Alabi</li>
 
-                           <li>Dr. Promise Ajala</li>
+                        <li>Dr. Promise Ajala</li>
 
-                       </ul>
+                    </ul>
 
-                   </div>
+                </div>
 
-               </div>
+            </div>
 
-           </div>
+        </div>
 
-       </section>
+    </section>
 
- 
 
- 
+    <!-- 4. Photos Link Section (Replaced Gallery) -->
 
-       <!-- 4. Photos Link Section (Replaced Gallery) -->
+    <section id="photos" class="py-16 sm:py-24 bg-gray-50">
 
-       <section id="photos" class="py-16 sm:py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-           <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-5xl text-accent mb-4">View & Share Our Photos</h2>
 
-               <h2 class="text-5xl text-accent mb-4">View & Share Our Photos</h2>
+            <div class="flower-divider">
+                <div class="flower-icon"></div>
+            </div>
 
-               <div class="flower-divider"><div class="flower-icon"></div></div>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
 
-               <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                We've put together a gallery of our memories for you to enjoy. We also encourage you to upload any
+                pictures you take during the wedding to our shared album!
 
-                   We've put together a gallery of our memories for you to enjoy. We also encourage you to upload any pictures you take during the wedding to our shared album!
+            </p>
 
-               </p>
 
- 
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
 
-               <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
+                <!-- The buttons use the correct link and open in a new tab -->
 
-                   <!-- The buttons use the correct link and open in a new tab -->
+                <a href="https://drive.google.com/drive/folders/1h0uFD5wqeyLzf8wryQ8JQKK8dOfC6xjt" target="_blank"
+                   class="px-8 py-3 text-base font-medium rounded-xl text-white btn-primary shadow-lg hover:shadow-xl w-full sm:w-auto">
 
-                   <a href="https://drive.google.com/drive/folders/1h0uFD5wqeyLzf8wryQ8JQKK8dOfC6xjt" target="_blank" class="px-8 py-3 text-base font-medium rounded-xl text-white btn-primary shadow-lg hover:shadow-xl w-full sm:w-auto">
+                    View Official Gallery
 
-                       View Official Gallery
+                </a>
 
-                   </a>
+                <a href="https://drive.google.com/drive/folders/1h0uFD5wqeyLzf8wryQ8JQKK8dOfC6xjt" target="_blank"
+                   class="px-8 py-3 text-base font-medium rounded-xl text-white bg-accent hover:bg-green-800 transition duration-200 shadow-lg hover:shadow-xl w-full sm:w-auto">
 
-                   <a href="https://drive.google.com/drive/folders/1h0uFD5wqeyLzf8wryQ8JQKK8dOfC6xjt" target="_blank" class="px-8 py-3 text-base font-medium rounded-xl text-white bg-accent hover:bg-green-800 transition duration-200 shadow-lg hover:shadow-xl w-full sm:w-auto">
+                    Upload Your Photos
 
-                       Upload Your Photos
+                </a>
 
-                   </a>
+            </div>
 
-               </div>
 
-               
+            <!-- Direct clickable link (Most reliable fallback) -->
 
-               <!-- Direct clickable link (Most reliable fallback) -->
+            <p class="mt-8 text-md text-gray-600 max-w-2xl mx-auto">
 
-               <p class="mt-8 text-md text-gray-600 max-w-2xl mx-auto">
+                Access the photo album directly here:
 
-                   Access the photo album directly here:
+                <a href="https://drive.google.com/drive/folders/1h0uFD5wqeyLzf8wryQ8JQKK8dOfC6xjt" target="_blank"
+                   class="font-semibold text-accent hover:underline break-words">
 
-                   <a href="https://drive.google.com/drive/folders/1h0uFD5wqeyLzf8wryQ8JQKK8dOfC6xjt" target="_blank" class="font-semibold text-accent hover:underline break-words">
+                    https://drive.google.com/drive/folders/1h0uFD5wqeyLzf8wryQ8JQKK8dOfC6xjt
 
-                       https://drive.google.com/drive/folders/1h0uFD5wqeyLzf8wryQ8JQKK8dOfC6xjt
+                </a>
 
-                   </a>
+            </p>
 
-               </p>
 
- 
+            <p class="text-sm text-gray-500 mt-6">
 
-               <p class="text-sm text-gray-500 mt-6">
+                Don't forget to use the official hashtag: <span class="font-bold text-accent">#TheKingsBanquet25</span>
 
-                   Don't forget to use the official hashtag: <span class="font-bold text-accent">#TheKingsBanquet25</span>
+            </p>
 
-               </p>
+            <p class="text-xs text-red-500 mt-2">
 
-               <p class="text-xs text-red-500 mt-2">
+                *Note: The links will fully redirect once the website is hosted live.*
 
-                   *Note: The links will fully redirect once the website is hosted live.*
+            </p>
 
-               </p>
+        </div>
 
-           </div>
+    </section>
 
-       </section>
 
- 
+    <!-- 5. Bible Texts Section -->
 
-       <!-- 5. Bible Texts Section -->
+    <section id="texts" class="py-16 sm:py-24 bg-primary-light">
 
-       <section id="texts" class="py-16 sm:py-24 bg-primary-light">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-           <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-5xl text-accent mb-4">Scripture for Our Journey</h2>
 
-               <h2 class="text-5xl text-accent mb-4">Scripture for Our Journey</h2>
+            <div class="flower-divider">
+                <div class="flower-icon"></div>
+            </div>
 
-               <div class="flower-divider"><div class="flower-icon"></div></div>
 
-               
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-               <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Text 1: Numbers 23:19 -->
 
-                   <!-- Text 1: Numbers 23:19 -->
+                <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent">
 
-                   <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent">
+                    <p class="text-xl italic text-gray-700 mb-4">
 
-                       <p class="text-xl italic text-gray-700 mb-4">
+                        "God is not a man, that he should lie; neither the son of man, that he should repent: hath he
+                        said, and shall he not do it? or hath he spoken, and shall he not make it good?"
 
-                           "God is not a man, that he should lie; neither the son of man, that he should repent: hath he said, and shall he not do it? or hath he spoken, and shall he not make it good?"
+                    </p>
 
-                       </p>
+                    <p class="font-semibold text-accent"> - Numbers 23:19</p>
 
-                       <p class="font-semibold text-accent"> - Numbers 23:19</p>
+                </div>
 
-                   </div>
 
- 
+                <!-- Text 2: Ezekiel 37:7 -->
 
-                   <!-- Text 2: Ezekiel 37:7 -->
+                <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent">
 
-                   <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent">
+                    <p class="text-xl italic text-gray-700 mb-4">
 
-                       <p class="text-xl italic text-gray-700 mb-4">
+                        "So I prophesied as I was commanded: and as I prophesied, there was a noise, and behold a
+                        shaking, and the bones came together, bone to his bone."
 
-                           "So I prophesied as I was commanded: and as I prophesied, there was a noise, and behold a shaking, and the bones came together, bone to his bone."
+                    </p>
 
-                       </p>
+                    <p class="font-semibold text-accent"> - Ezekiel 37:7</p>
 
-                       <p class="font-semibold text-accent"> - Ezekiel 37:7</p>
+                </div>
 
-                   </div>
 
-                   
+                <!-- Text 3: Ecclesiastes 4:9 -->
 
-                   <!-- Text 3: Ecclesiastes 4:9 -->
+                <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent">
 
-                   <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent">
+                    <p class="text-xl italic text-gray-700 mb-4">
 
-                       <p class="text-xl italic text-gray-700 mb-4">
+                        "Two are better than one; because they have a good reward for their labour..."
 
-                           "Two are better than one; because they have a good reward for their labour..."
+                    </p>
 
-                       </p>
+                    <p class="font-semibold text-accent"> - Ecclesiastes 4:9</p>
 
-                       <p class="font-semibold text-accent"> - Ecclesiastes 4:9</p>
+                </div>
 
-                   </div>
 
- 
+                <!-- Text 4: Ecclesiastes 3:14 -->
 
-                   <!-- Text 4: Ecclesiastes 3:14 -->
+                <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent">
 
-                   <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent">
+                    <p class="text-xl italic text-gray-700 mb-4">
 
-                       <p class="text-xl italic text-gray-700 mb-4">
+                        "I know that whatever God does, it endures forever; nothing can be added to it nor anything
+                        taken from it. And God does it so that men will [reverently] fear Him [revere and worship Him,
+                        knowing that He is]."
 
-                           "I know that whatever God does, it endures forever; nothing can be added to it nor anything taken from it. And God does it so that men will [reverently] fear Him [revere and worship Him, knowing that He is]."
+                    </p>
 
-                       </p>
+                    <p class="font-semibold text-accent"> - Ecclesiastes 3:14</p>
 
-                       <p class="font-semibold text-accent"> - Ecclesiastes 3:14</p>
+                </div>
 
-                   </div>
 
- 
+                <!-- Text 5: 1 Peter 4:8 (Spanning) -->
 
-                   <!-- Text 5: 1 Peter 4:8 (Spanning) -->
+                <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent md:col-span-2 max-w-lg mx-auto">
 
-                   <div class="bg-white p-6 rounded-2xl shadow-elegant border-l-4 border-accent md:col-span-2 max-w-lg mx-auto">
+                    <p class="text-xl italic text-gray-700 mb-4">
 
-                       <p class="text-xl italic text-gray-700 mb-4">
+                        "Above all, love each other deeply, because love covers over a multitude of sins."
 
-                           "Above all, love each other deeply, because love covers over a multitude of sins."
+                    </p>
 
-                       </p>
+                    <p class="font-semibold text-accent"> - 1 Peter 4:8</p>
 
-                       <p class="font-semibold text-accent"> - 1 Peter 4:8</p>
+                </div>
 
-                   </div>
+            </div>
 
-               </div>
+        </div>
 
-           </div>
+    </section>
 
-       </section>
 
- 
+    <!-- 6. Travel & Stay Section -->
 
-       <!-- 6. Travel & Stay Section -->
+    <section id="info" class="py-16 sm:py-24 bg-white">
 
-       <section id="info" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl text-accent text-center mb-4">Travel & Stay</h2>
 
-               <h2 class="text-5xl text-accent text-center mb-4">Travel & Stay</h2>
+            <div class="flower-divider">
+                <div class="flower-icon"></div>
+            </div>
 
-               <div class="flower-divider"><div class="flower-icon"></div></div>
 
-               
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
-               <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
-                   
+                <!-- Venue Details Card -->
 
-                   <!-- Venue Details Card -->
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-elegant">
 
-                   <div class="bg-gray-50 p-6 rounded-2xl shadow-elegant">
+                    <h3 class="text-3xl text-gray-800 mb-3 flex items-center">
 
-                       <h3 class="text-3xl text-gray-800 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-accent" fill="none"
+                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.244-4.243a8 8 0 1111.314 0z"/>
 
-                               <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
 
-                               <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
 
-                           </svg>
+                        The Venue
 
-                           The Venue
+                    </h3>
 
-                       </h3>
+                    <p class="text-gray-600 font-semibold">Ogbomosho Town, Oyo State</p>
 
-                       <p class="text-gray-600 font-semibold">Ogbomosho Town, Oyo State</p>
+                    <p class="text-sm text-gray-500 mt-2">The exact venue will be communicated via the official
+                        invitation card.</p>
 
-                       <p class="text-sm text-gray-500 mt-2">The exact venue will be communicated via the official invitation card.</p>
+                    <a href="https://maps.app.goo.gl/ogbomoshoplaceholder" target="_blank"
+                       class="mt-4 inline-block text-accent hover:underline text-sm font-medium">Search Ogbomosho on
+                        Map</a>
 
-                       <a href="https://maps.app.goo.gl/ogbomoshoplaceholder" target="_blank" class="mt-4 inline-block text-accent hover:underline text-sm font-medium">Search Ogbomosho on Map</a>
+                </div>
 
-                   </div>
 
- 
+                <!-- Lodging Card (Hotel Details) -->
 
-                   <!-- Lodging Card (Hotel Details) -->
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-elegant">
 
-                   <div class="bg-gray-50 p-6 rounded-2xl shadow-elegant">
+                    <h3 class="text-3xl text-gray-800 mb-3 flex items-center">
 
-                       <h3 class="text-3xl text-gray-800 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-accent" fill="none"
+                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 10h.01M15 10h.01M5 21h14a2 2 0 002-2v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2z"/>
 
-                               <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 10h.01M15 10h.01M5 21h14a2 2 0 002-2v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2z" />
+                        </svg>
 
-                           </svg>
+                        Nearby Hotels
 
-                           Nearby Hotels
+                    </h3>
 
-                       </h3>
+                    <p class="text-gray-600">For guests traveling, here are a few recommended accommodation options:</p>
 
-                       <p class="text-gray-600">For guests traveling, here are a few recommended accommodation options:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-600 mt-3 space-y-2">
 
-                       <ul class="list-disc list-inside text-sm text-gray-600 mt-3 space-y-2">
+                        <li><span class="font-semibold text-gray-800">Timsed Hotels & Holiday Resort:</span> A spacious
+                            and well-known hotel option in Ogbomosho.
+                        </li>
 
-                           <li><span class="font-semibold text-gray-800">Timsed Hotels & Holiday Resort:</span> A spacious and well-known hotel option in Ogbomosho.</li>
+                        <li><span class="font-semibold text-gray-800">LAUTECH Guest House:</span> A reliable choice
+                            often used by visitors, located near the university.
+                        </li>
 
-                           <li><span class="font-semibold text-gray-800">LAUTECH Guest House:</span> A reliable choice often used by visitors, located near the university.</li>
+                        <li><span class="font-semibold text-gray-800">Short-Term Rentals:</span> Options like Airbnb are
+                            also available in the area.
+                        </li>
 
-                           <li><span class="font-semibold text-gray-800">Short-Term Rentals:</span> Options like Airbnb are also available in the area.</li>
+                    </ul>
 
-                       </ul>
+                    <p class="text-sm text-gray-500 mt-4">Please book your accommodation early as December is a busy
+                        month.</p>
 
-                       <p class="text-sm text-gray-500 mt-4">Please book your accommodation early as December is a busy month.</p>
+                </div>
 
-                   </div>
+            </div>
 
-               </div>
+        </div>
 
-           </div>
+    </section>
 
-       </section>
 
- 
+    <!-- 7. RSVP Form Section -->
 
- 
+    <section id="rsvp" class="py-16 sm:py-24 bg-gray-50">
 
-       <!-- 7. RSVP Form Section -->
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
 
-       <section id="rsvp" class="py-16 sm:py-24 bg-gray-50">
+            <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl border-t-4 border-accent">
 
-           <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl text-accent text-center mb-4">Confirm Your Attendance</h2>
 
-               <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl border-t-4 border-accent">
+                <p class="text-gray-600 text-center mb-8">
 
-                   <h2 class="text-4xl text-accent text-center mb-4">Confirm Your Attendance</h2>
+                    Kindly RSVP by **December 1st, 2025**. We can't wait to celebrate with you!
 
-                   <p class="text-gray-600 text-center mb-8">
+                </p>
 
-                       Kindly RSVP by **December 1st, 2025**. We can't wait to celebrate with you!
 
-                   </p>
+                <form id="rsvp-form" class="space-y-6 font-medium">
 
- 
+                    <div>
 
-                   <form id="rsvp-form" class="space-y-6 font-medium">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name(s)</label>
 
-                       <div>
+                        <input type="text" id="name" name="name" required
 
-                           <label for="name" class="block text-sm font-medium text-gray-700">Full Name(s)</label>
+                               class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-accent focus:border-accent">
 
-                           <input type="text" id="name" name="name" required
+                    </div>
 
-                                  class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-accent focus:border-accent">
 
-                       </div>
+                    <div>
 
- 
+                        <label for="attending" class="block text-sm font-medium text-gray-700">Are you
+                            attending?</label>
 
-                       <div>
+                        <select id="attending" name="attending" required
 
-                           <label for="attending" class="block text-sm font-medium text-gray-700">Are you attending?</label>
+                                class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-accent focus:border-accent appearance-none bg-white">
 
-                           <select id="attending" name="attending" required
+                            <option value="">Select an option</option>
 
-                                   class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-accent focus:border-accent appearance-none bg-white">
+                            <option value="yes">Yes, gladly accept</option>
 
-                               <option value="">Select an option</option>
+                            <option value="no">No, respectfully decline</option>
 
-                               <option value="yes">Yes, gladly accept</option>
+                        </select>
 
-                               <option value="no">No, respectfully decline</option>
+                    </div>
 
-                           </select>
 
-                       </div>
+                    <div id="guest-count-field" class="hidden">
 
-                       
+                        <label for="guests" class="block text-sm font-medium text-gray-700">Number of Guests (Including
+                            yourself)</label>
 
-                       <div id="guest-count-field" class="hidden">
+                        <input type="number" id="guests" name="guests" min="1" max="6" value="1"
 
-                           <label for="guests" class="block text-sm font-medium text-gray-700">Number of Guests (Including yourself)</label>
+                               class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-accent focus:border-accent">
 
-                           <input type="number" id="guests" name="guests" min="1" max="6" value="1"
+                    </div>
 
-                                  class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-accent focus:border-accent">
 
-                       </div>
+                    <div>
 
- 
+                        <label for="diet" class="block text-sm font-medium text-gray-700">Dietary Restrictions / Notes
+                            (Optional)</label>
 
-                       <div>
+                        <textarea id="diet" name="diet" rows="3"
 
-                           <label for="diet" class="block text-sm font-medium text-gray-700">Dietary Restrictions / Notes (Optional)</label>
+                                  class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-accent focus:border-accent"></textarea>
 
-                           <textarea id="diet" name="diet" rows="3"
+                    </div>
 
-                                     class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-accent focus:border-accent"></textarea>
 
-                       </div>
+                    <button type="submit"
+                            class="w-full flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-xl text-white btn-primary shadow-lg hover:shadow-xl">
 
- 
+                        Submit RSVP
 
-                       <button type="submit" class="w-full flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-xl text-white btn-primary shadow-lg hover:shadow-xl">
+                    </button>
 
-                           Submit RSVP
+                </form>
 
-                       </button>
+                <div id="rsvp-message" class="mt-4 p-4 rounded-lg text-center hidden font-medium" role="alert"></div>
 
-                   </form>
+            </div>
 
-                   <div id="rsvp-message" class="mt-4 p-4 rounded-lg text-center hidden font-medium" role="alert"></div>
+        </div>
 
-               </div>
+    </section>
 
-           </div>
 
-       </section>
+    <!-- 8. Account Details for Support -->
 
- 
+    <section id="support" class="py-16 sm:py-24 bg-white">
 
-       <!-- 8. Account Details for Support -->
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-       <section id="support" class="py-16 sm:py-24 bg-white">
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-2xl border-t-4 border-gold">
 
-           <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl text-accent mb-4">Support & Well Wishes</h2>
 
-               <div class="bg-gray-50 p-8 rounded-2xl shadow-2xl border-t-4 border-gold">
+                <div class="flower-divider">
+                    <div class="flower-icon"></div>
+                </div>
 
-                   <h2 class="text-4xl text-accent mb-4">Support & Well Wishes</h2>
+                <p class="text-gray-600 mb-6">
 
-                   <div class="flower-divider"><div class="flower-icon"></div></div>
+                    More than gifts, we cherish your presence and prayers. If you wish to bless us financially as we
+                    start our new life, details are below.
 
-                   <p class="text-gray-600 mb-6">
+                </p>
 
-                       More than gifts, we cherish your presence and prayers. If you wish to bless us financially as we start our new life, details are below.
 
-                   </p>
+                <div class="space-y-6 text-left">
 
-                   
+                    <!-- Eunice's Account Details -->
 
-                   <div class="space-y-6 text-left">
+                    <div class="p-4 bg-white rounded-lg border border-primary/50 shadow-md">
 
-                       <!-- Eunice's Account Details -->
+                        <h3 class="text-2xl text-accent mb-2">Eunice's Account (Kayode Eunice Oluwabunmi)</h3>
 
-                       <div class="p-4 bg-white rounded-lg border border-primary/50 shadow-md">
+                        <div class="flex justify-between items-center border-b pb-2">
 
-                           <h3 class="text-2xl text-accent mb-2">Eunice's Account (Kayode Eunice Oluwabunmi)</h3>
+                            <span class="font-medium text-gray-700">Bank:</span>
 
-                           <div class="flex justify-between items-center border-b pb-2">
+                            <span class="font-semibold text-gray-900">GT (Guaranty Trust Bank)</span>
 
-                               <span class="font-medium text-gray-700">Bank:</span>
+                        </div>
 
-                               <span class="font-semibold text-gray-900">GT (Guaranty Trust Bank)</span>
+                        <div class="flex justify-between items-center pt-2">
 
-                           </div>
+                            <span class="font-medium text-gray-700">Account Number:</span>
 
-                           <div class="flex justify-between items-center pt-2">
+                            <span id="eunice-account-number" class="font-semibold text-accent text-xl">0637904475</span>
 
-                               <span class="font-medium text-gray-700">Account Number:</span>
+                        </div>
 
-                               <span id="eunice-account-number" class="font-semibold text-accent text-xl">0637904475</span>
+                    </div>
 
-                           </div>
 
-                       </div>
+                    <!-- Oluwatosin's Account Details -->
 
- 
+                    <div class="p-4 bg-white rounded-lg border border-primary/50 shadow-md">
 
-                       <!-- Oluwatosin's Account Details -->
+                        <h3 class="text-2xl text-accent mb-2">Oluwatosin's Account (Ayobami Oluwatosin Joseph)</h3>
 
-                       <div class="p-4 bg-white rounded-lg border border-primary/50 shadow-md">
+                        <div class="flex justify-between items-center border-b pb-2">
 
-                           <h3 class="text-2xl text-accent mb-2">Oluwatosin's Account (Ayobami Oluwatosin Joseph)</h3>
+                            <span class="font-medium text-gray-700">Bank:</span>
 
-                           <div class="flex justify-between items-center border-b pb-2">
+                            <span class="font-semibold text-gray-900">UBA (United Bank for Africa)</span>
 
-                               <span class="font-medium text-gray-700">Bank:</span>
+                        </div>
 
-                               <span class="font-semibold text-gray-900">UBA (United Bank for Africa)</span>
+                        <div class="flex justify-between items-center pt-2">
 
-                           </div>
+                            <span class="font-medium text-gray-700">Account Number:</span>
 
-                           <div class="flex justify-between items-center pt-2">
+                            <span id="oluwatosin-account-number"
+                                  class="font-semibold text-accent text-xl">2206968708</span>
 
-                               <span class="font-medium text-gray-700">Account Number:</span>
+                        </div>
 
-                               <span id="oluwatosin-account-number" class="font-semibold text-accent text-xl">2206968708</span>
+                    </div>
 
-                           </div>
+                </div>
 
-                       </div>
 
-                   </div>
+                <button onclick="copyAllAccountDetails()"
 
-                   
+                        class="px-8 py-3 mt-8 text-base font-medium rounded-xl text-white btn-primary shadow-md hover:shadow-xl">
 
-                   <button onclick="copyAllAccountDetails()"
+                    Copy All Account Numbers
 
-                           class="px-8 py-3 mt-8 text-base font-medium rounded-xl text-white btn-primary shadow-md hover:shadow-xl">
+                </button>
 
-                       Copy All Account Numbers
 
-                   </button>
+                <!-- Hidden input for copying (used by JS) -->
 
-                   
+                <input type="text" id="eunice-account-input" value="0637904475"
+                       style="position: absolute; left: -9999px;">
 
-                   <!-- Hidden input for copying (used by JS) -->
+                <input type="text" id="oluwatosin-account-input" value="2206968708"
+                       style="position: absolute; left: -9999px;">
 
-                   <input type="text" id="eunice-account-input" value="0637904475" style="position: absolute; left: -9999px;">
+            </div>
 
-                   <input type="text" id="oluwatosin-account-input" value="2206968708" style="position: absolute; left: -9999px;">
+        </div>
 
-               </div>
+    </section>
 
-           </div>
 
-       </section>
+    <!-- 9. Word of Prayer Section -->
 
- 
+    <section id="prayer" class="py-16 sm:py-24 bg-accent">
 
-       <!-- 9. Word of Prayer Section -->
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
 
-       <section id="prayer" class="py-16 sm:py-24 bg-accent">
+            <h2 class="text-5xl text-indigo-200 mb-6">A Word of Prayer</h2>
 
-           <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <div class="flower-divider" style="margin: 1.5rem 0; filter: invert(100%);">
+                <div class="flower-icon"></div>
+            </div>
 
-               <h2 class="text-5xl text-indigo-200 mb-6">A Word of Prayer</h2>
+            <p class="text-xl font-light leading-relaxed mb-6">
 
-               <div class="flower-divider" style="margin: 1.5rem 0; filter: invert(100%);"><div class="flower-icon"></div></div>
+                Lord, we ask for your divine guidance and protection over our marriage. May our home be a sanctuary of
+                peace, laughter, and faith. Let our love reflect your unending grace, and may we always honor you in our
+                union. Bless our guests who travel far and near to share this special day with us. Amen.
 
-               <p class="text-xl font-light leading-relaxed mb-6">
+            </p>
 
-                   Lord, we ask for your divine guidance and protection over our marriage. May our home be a sanctuary of peace, laughter, and faith. Let our love reflect your unending grace, and may we always honor you in our union. Bless our guests who travel far and near to share this special day with us. Amen.
+            <p class="text-lg font-semibold text-indigo-300">
 
-               </p>
+                With grateful hearts, Eunice & Oluwatosin
 
-               <p class="text-lg font-semibold text-indigo-300">
+            </p>
 
-                   With grateful hearts, Eunice & Oluwatosin
+        </div>
 
-               </p>
+    </section>
 
-           </div>
+</main>
 
-       </section>
 
-   </main>
+<!-- Footer -->
 
- 
+<footer class="bg-gray-800 text-white">
 
-   <!-- Footer -->
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
 
-   <footer class="bg-gray-800 text-white">
+        <p class="text-3xl font-light font-bold">Eunice & Oluwatosin</p>
 
-       <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+        <p class="mt-2 text-sm text-gray-400">December 6th, 2025 | #TheKingsBanquet25</p>
 
-           <p class="text-3xl font-light font-bold">Eunice & Oluwatosin</p>
+        <p class="mt-6 text-xs text-gray-500">&copy; 2025 E&O Wedding Website. All rights reserved.</p>
 
-           <p class="mt-2 text-sm text-gray-400">December 6th, 2025 | #TheKingsBanquet25</p>
+    </div>
 
-           <p class="mt-6 text-xs text-gray-500">&copy; 2025 E&O Wedding Website. All rights reserved.</p>
+</footer>
 
-       </div>
 
-   </footer>
+<!-- JavaScript for Interactions -->
 
- 
+<script>
 
-   <!-- JavaScript for Interactions -->
+    // --- Custom Modal/Message Box Functionality ---
 
-   <script>
+    function showMessageBox(message) {
 
-       // --- Custom Modal/Message Box Functionality ---
+        const container = document.body;
 
-       function showMessageBox(message) {
+        // Remove any existing box
 
-           const container = document.body;
+        const existingBox = document.getElementById('custom-message-box');
 
-           // Remove any existing box
+        if (existingBox) existingBox.remove();
 
-           const existingBox = document.getElementById('custom-message-box');
 
-           if (existingBox) existingBox.remove();
 
- 
+        // Create Modal Backdrop
 
-           // Create Modal Backdrop
+        const backdrop = document.createElement('div');
 
-           const backdrop = document.createElement('div');
+        backdrop.id = 'custom-message-box';
 
-           backdrop.id = 'custom-message-box';
+        backdrop.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 transition-opacity duration-300';
 
-           backdrop.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 transition-opacity duration-300';
+        backdrop.innerHTML = `
 
-           backdrop.innerHTML = `
+            <div class="bg-white p-6 sm:p-8 rounded-xl shadow-2xl max-w-sm w-full transform transition-all duration-300 scale-95" onclick="event.stopPropagation()">
 
-               <div class="bg-white p-6 sm:p-8 rounded-xl shadow-2xl max-w-sm w-full transform transition-all duration-300 scale-95" onclick="event.stopPropagation()">
+                <h3 class="text-2xl font-bold text-accent mb-3">Notification</h3>
 
-                   <h3 class="text-2xl font-bold text-accent mb-3">Notification</h3>
+                <p class="text-gray-700 mb-6">${message}</p>
 
-                   <p class="text-gray-700 mb-6">${message}</p>
+                <button id="close-message" class="w-full px-4 py-2 text-white btn-primary rounded-lg shadow-md">
 
-                   <button id="close-message" class="w-full px-4 py-2 text-white btn-primary rounded-lg shadow-md">
+                    Close
 
-                       Close
+                </button>
 
-                   </button>
+            </div>
 
-               </div>
+        `;
 
-           `;
 
-           
 
-           container.appendChild(backdrop);
+        container.appendChild(backdrop);
 
-           
 
-           // Add event listeners to close the box
 
-           document.getElementById('close-message').addEventListener('click', () => backdrop.remove());
+        // Add event listeners to close the box
 
-           backdrop.addEventListener('click', () => backdrop.remove()); // Close on backdrop click
+        document.getElementById('close-message').addEventListener('click', () => backdrop.remove());
 
- 
+        backdrop.addEventListener('click', () => backdrop.remove()); // Close on backdrop click
 
-           // Animate in the box
 
-           setTimeout(() => {
 
-               const innerBox = backdrop.querySelector('.scale-95');
+        // Animate in the box
 
-               if(innerBox) innerBox.classList.remove('scale-95');
+        setTimeout(() => {
 
-           }, 10);
+            const innerBox = backdrop.querySelector('.scale-95');
 
-       }
+            if(innerBox) innerBox.classList.remove('scale-95');
 
- 
+        }, 10);
 
-       // --- Copy Account Details Functionality ---
+    }
 
-       function copyAllAccountDetails() {
 
-           const euniceAccount = document.getElementById("eunice-account-input").value;
 
-           const oluwatosinAccount = document.getElementById("oluwatosin-account-input").value;
+    // --- Copy Account Details Functionality ---
 
-           
+    function copyAllAccountDetails() {
 
-           const combinedText =
+        const euniceAccount = document.getElementById("eunice-account-input").value;
 
-               `Eunice (GTB): ${euniceAccount}\n` +
+        const oluwatosinAccount = document.getElementById("oluwatosin-account-input").value;
 
-               `Oluwatosin (UBA): ${oluwatosinAccount}`;
 
- 
 
-           // Create a temporary textarea to hold the combined text for copying
+        const combinedText =
 
-           const tempTextArea = document.createElement('textarea');
+            `Eunice (GTB): ${euniceAccount}\n` +
 
-           tempTextArea.value = combinedText;
+            `Oluwatosin (UBA): ${oluwatosinAccount}`;
 
-           document.body.appendChild(tempTextArea);
 
- 
 
-           // Select and copy the text
+        // Create a temporary textarea to hold the combined text for copying
 
-           tempTextArea.select();
+        const tempTextArea = document.createElement('textarea');
 
-           tempTextArea.setSelectionRange(0, 99999); // For mobile devices
+        tempTextArea.value = combinedText;
 
- 
+        document.body.appendChild(tempTextArea);
 
-           try {
 
-               document.execCommand('copy');
 
-               showMessageBox("Both account numbers (Eunice & Oluwatosin) have been copied to your clipboard!");
+        // Select and copy the text
 
-           } catch (err) {
+        tempTextArea.select();
 
-               showMessageBox("Could not copy account numbers. Please note them down manually.");
+        tempTextArea.setSelectionRange(0, 99999); // For mobile devices
 
-           } finally {
 
-               // Remove the temporary textarea
 
-               document.body.removeChild(tempTextArea);
+        try {
 
-           }
+            document.execCommand('copy');
 
-       }
+            showMessageBox("Both account numbers (Eunice & Oluwatosin) have been copied to your clipboard!");
 
- 
+        } catch (err) {
 
-       // --- Event Listeners and Form Logic ---
+            showMessageBox("Could not copy account numbers. Please note them down manually.");
 
-       document.addEventListener('DOMContentLoaded', () => {
+        } finally {
 
-           const menuButton = document.getElementById('menu-button');
+            // Remove the temporary textarea
 
-           const mobileMenu = document.getElementById('mobile-menu');
+            document.body.removeChild(tempTextArea);
 
-           const attendingSelect = document.getElementById('attending');
+        }
 
-           const guestCountField = document.getElementById('guest-count-field');
+    }
 
-           const rsvpForm = document.getElementById('rsvp-form');
 
-           const rsvpMessage = document.getElementById('rsvp-message');
 
- 
+    // --- Event Listeners and Form Logic ---
 
-           // 1. Menu Toggle
+    document.addEventListener('DOMContentLoaded', () => {
 
-           menuButton.addEventListener('click', () => {
+        const menuButton = document.getElementById('menu-button');
 
-               mobileMenu.classList.toggle('hidden');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-           });
+        const attendingSelect = document.getElementById('attending');
 
- 
+        const guestCountField = document.getElementById('guest-count-field');
 
-           // Close menu when a link is clicked
+        const rsvpForm = document.getElementById('rsvp-form');
 
-           mobileMenu.querySelectorAll('a').forEach(link => {
+        const rsvpMessage = document.getElementById('rsvp-message');
 
-               link.addEventListener('click', () => {
 
-                   setTimeout(() => {
 
-                       mobileMenu.classList.add('hidden');
+        // 1. Menu Toggle
 
-                   }, 100);
+        menuButton.addEventListener('click', () => {
 
-               });
+            mobileMenu.classList.toggle('hidden');
 
-           });
+        });
 
- 
 
-           // 2. Conditional RSVP Guest Field
 
-           attendingSelect.addEventListener('change', () => {
+        // Close menu when a link is clicked
 
-               if (attendingSelect.value === 'yes') {
+        mobileMenu.querySelectorAll('a').forEach(link => {
 
-                   guestCountField.classList.remove('hidden');
+            link.addEventListener('click', () => {
 
-                   document.getElementById('guests').setAttribute('required', 'required');
+                setTimeout(() => {
 
-               } else {
+                    mobileMenu.classList.add('hidden');
 
-                   guestCountField.classList.add('hidden');
+                }, 100);
 
-                   document.getElementById('guests').removeAttribute('required');
+            });
 
-               }
+        });
 
-           });
 
- 
 
-           // 3. RSVP Form Submission (Client-Side Simulation)
+        // 2. Conditional RSVP Guest Field
 
-           rsvpForm.addEventListener('submit', function (e) {
+        attendingSelect.addEventListener('change', () => {
 
-               e.preventDefault();
+            if (attendingSelect.value === 'yes') {
 
-               
+                guestCountField.classList.remove('hidden');
 
-               const name = document.getElementById('name').value;
+                document.getElementById('guests').setAttribute('required', 'required');
 
-               const attending = document.getElementById('attending').value;
+            } else {
 
-               const guests = document.getElementById('guests').value;
+                guestCountField.classList.add('hidden');
 
-               
+                document.getElementById('guests').removeAttribute('required');
 
-               rsvpMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700');
+            }
 
-               
+        });
 
-               if (attending === 'yes') {
 
-                   const guestText = guests > 1 ? ` for a party of ${guests}` : '';
 
-                   rsvpMessage.innerHTML = `Thank you, ${name}! Your attendance is confirmed${guestText}. We can't wait to celebrate with you!`;
+        // 3. RSVP Form Submission (Client-Side Simulation)
 
-                   rsvpMessage.classList.add('bg-green-100', 'text-green-700');
+        rsvpForm.addEventListener('submit', function (e) {
 
-                   rsvpForm.reset();
+            e.preventDefault();
 
-                   guestCountField.classList.add('hidden');
 
-               } else if (attending === 'no') {
 
-                   rsvpMessage.innerHTML = `We are sorry you won't be able to make it, ${name}. We'll celebrate with you another time!`;
+            const name = document.getElementById('name').value;
 
-                   rsvpMessage.classList.add('bg-red-100', 'text-red-700');
+            const attending = document.getElementById('attending').value;
 
-                   rsvpForm.reset();
+            const guests = document.getElementById('guests').value;
 
-               } else {
 
-                   showMessageBox('Please select whether you are attending or declining.');
 
-                   rsvpMessage.classList.add('hidden');
+            rsvpMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700');
 
-               }
 
- 
 
-               // Clear the message after 5 seconds
+            if (attending === 'yes') {
 
-               setTimeout(() => {
+                const guestText = guests > 1 ? ` for a party of ${guests}` : '';
 
-                   rsvpMessage.classList.add('hidden');
+                rsvpMessage.innerHTML = `Thank you, ${name}! Your attendance is confirmed${guestText}. We can't wait to celebrate with you!`;
 
-               }, 5000);
+                rsvpMessage.classList.add('bg-green-100', 'text-green-700');
 
-           });
+                rsvpForm.reset();
 
-           
+                guestCountField.classList.add('hidden');
 
-           // 4. Smooth Scrolling for Anchor Links (fixes mobile menu issues)
+            } else if (attending === 'no') {
 
-           document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                rsvpMessage.innerHTML = `We are sorry you won't be able to make it, ${name}. We'll celebrate with you another time!`;
 
-               anchor.addEventListener('click', function (e) {
+                rsvpMessage.classList.add('bg-red-100', 'text-red-700');
 
-                   if (this.getAttribute('href').length > 1) {
+                rsvpForm.reset();
 
-                       e.preventDefault();
+            } else {
 
-                       const targetId = this.getAttribute('href').substring(1);
+                showMessageBox('Please select whether you are attending or declining.');
 
-                       const targetElement = document.getElementById(targetId);
+                rsvpMessage.classList.add('hidden');
 
-                       
+            }
 
-                       if (targetElement) {
 
-                           window.scrollTo({
 
-                               top: targetElement.offsetTop - 70, // Offset for fixed header
+            // Clear the message after 5 seconds
 
-                               behavior: 'smooth'
+            setTimeout(() => {
 
-                           });
+                rsvpMessage.classList.add('hidden');
 
-                       }
+            }, 5000);
 
-                   }
+        });
 
-               });
 
-           });
 
-       });
+        // 4. Smooth Scrolling for Anchor Links (fixes mobile menu issues)
 
-   </script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+            anchor.addEventListener('click', function (e) {
+
+                if (this.getAttribute('href').length > 1) {
+
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1);
+
+                    const targetElement = document.getElementById(targetId);
+
+
+
+                    if (targetElement) {
+
+                        window.scrollTo({
+
+                            top: targetElement.offsetTop - 70, // Offset for fixed header
+
+                            behavior: 'smooth'
+
+                        });
+
+                    }
+
+                }
+
+            });
+
+        });
+
+    });
+
+</script>
 
 </body>
 
