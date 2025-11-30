@@ -1410,6 +1410,7 @@
         headers: {
             "Content-Type": "application/json"
         },
+        mode: "no-cors",  // required for Apps Script webhooks
         body: JSON.stringify({
             name: name,
             attending: attending,
