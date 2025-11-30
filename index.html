@@ -1396,63 +1396,56 @@
 
         // 3. RSVP Form Submission (Client-Side Simulation)
 
-        rsvpForm.addEventListener('submit', function (e) {
+    rsvpForm.addEventListener('submit', function (e) {
+    e.preventDefault();
 
-            e.preventDefault();
+    const name = document.getElementById('name').value;
+    const attending = document.getElementById('attending').value;
+    const guests = document.getElementById('guests').value;
 
+    // ---- SEND DATA TO GOOGLE SHEETS ----
+    fetch("https://script.google.com/macros/s/AKfycbzZMK_FUjPyZvf6JaUfbmQfj6cM_QosPbnfLzoaq2jMgj9R0iK2FzTg0ct8K5S2YcA3hg/exec", {
+        method: "POST",
+        mode: "no-cors",  // required for Apps Script webhooks
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            name: name,
+            attending: attending,
+            diet: diet
+        })
+    })
+    .then(() => {
+        console.log("RSVP sent to Google Sheets!");
+    })
+    .catch(err => {
+        console.error("Error sending RSVP:", err);
+    });
 
+    // ---- Your existing UI feedback logic ----
+    rsvpMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700');
 
-            const name = document.getElementById('name').value;
+    if (attending === 'yes') {
+        const guestText = guests > 1 ? ` for a party of ${guests}` : '';
+        rsvpMessage.innerHTML = `Thank you, ${name}! Your attendance is confirmed${guestText}. We can't wait to celebrate with you!`;
+        rsvpMessage.classList.add('bg-green-100', 'text-green-700');
+        rsvpForm.reset();
+        guestCountField.classList.add('hidden');
+    } else if (attending === 'no') {
+        rsvpMessage.innerHTML = `We are sorry you won't be able to make it, ${name}. We'll celebrate with you another time!`;
+        rsvpMessage.classList.add('bg-red-100', 'text-red-700');
+        rsvpForm.reset();
+    } else {
+        showMessageBox('Please select whether you are attending or declining.');
+        rsvpMessage.classList.add('hidden');
+    }
 
-            const attending = document.getElementById('attending').value;
+    setTimeout(() => {
+        rsvpMessage.classList.add('hidden');
+    }, 5000);
+});
 
-            const guests = document.getElementById('guests').value;
-
-
-
-            rsvpMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700');
-
-
-
-            if (attending === 'yes') {
-
-                const guestText = guests > 1 ? ` for a party of ${guests}` : '';
-
-                rsvpMessage.innerHTML = `Thank you, ${name}! Your attendance is confirmed${guestText}. We can't wait to celebrate with you!`;
-
-                rsvpMessage.classList.add('bg-green-100', 'text-green-700');
-
-                rsvpForm.reset();
-
-                guestCountField.classList.add('hidden');
-
-            } else if (attending === 'no') {
-
-                rsvpMessage.innerHTML = `We are sorry you won't be able to make it, ${name}. We'll celebrate with you another time!`;
-
-                rsvpMessage.classList.add('bg-red-100', 'text-red-700');
-
-                rsvpForm.reset();
-
-            } else {
-
-                showMessageBox('Please select whether you are attending or declining.');
-
-                rsvpMessage.classList.add('hidden');
-
-            }
-
-
-
-            // Clear the message after 5 seconds
-
-            setTimeout(() => {
-
-                rsvpMessage.classList.add('hidden');
-
-            }, 5000);
-
-        });
 
 
 
