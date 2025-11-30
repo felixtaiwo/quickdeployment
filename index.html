@@ -1402,11 +1402,11 @@
     const name = document.getElementById('name').value;
     const attending = document.getElementById('attending').value;
     const guests = document.getElementById('guests').value;
+    const diet = document.getElementById('diet').value;    
 
     // ---- SEND DATA TO GOOGLE SHEETS ----
     fetch("https://script.google.com/macros/s/AKfycbzZMK_FUjPyZvf6JaUfbmQfj6cM_QosPbnfLzoaq2jMgj9R0iK2FzTg0ct8K5S2YcA3hg/exec", {
         method: "POST",
-        mode: "no-cors",  // required for Apps Script webhooks
         headers: {
             "Content-Type": "application/json"
         },
